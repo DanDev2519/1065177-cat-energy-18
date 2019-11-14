@@ -8,57 +8,55 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
-        alt="Логотип Кэтэнэрджи">
-    </a>
     <nav class="main-nav">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
+          alt="Логотип Кэтэнэрджи">
+      </a>
       <button class="main-nav__toggle">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
     </nav>
+    <div class="nutrition">
+      <b class="nutrition__title">Функциональное питание для котов</b>
+      <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
+      <img class="nutrition__product-image" src="https://via.placeholder.com/280x270" width="280" height="270"
+        alt="Кэт энерджи с курицей для набора массы">
+      <a class="nutrition__link-program button" href="form.html"></a>
+    </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Кэт энерджи - главная страница</h1>
 
-    <section class="nutrition">
-      <h2 class="nutrition__title">Функциональное питание для котов</h2>
-      <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
-      <div class="cotainer-center">
-        <img class="nutrition__product-image" src="https://via.placeholder.com/280x270" width="280" height="270"
-          alt="Кэт энерджи с курицей для набора массы">
-        <a class="nutrition__link-program button" href="form.html"></a>
-        <ul class="nutrition__list program-list">
-          <li class="program-list__item program-list__item--slim">
-            <h3 class="program-list__title">Похудение</h3>
-            <p class="program-list__description">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-              Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <a class="program-list__link-catalog" href="catalog.html">Каталог Slim</a>
-          </li>
-          <li class="program-list__item program-list__item--pro">
-            <h3 class="program-list__title">Набор массы</h3>
-            <p class="program-list__description">
-              Заработать авторитет среди дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="program-list__link-catalog" href="catalog.html">Каталог pro</a>
-          </li>
-        </ul>
-      </div>
+    <section class="program">
+      <ul class="program__list">
+        <li class="program__item program__item--slim">
+          <h2 class="program__title">Похудение</h2>
+          <p class="program__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="program__link-catalog" href="catalog.html">Каталог Slim</a>
+        </li>
+        <li class="program__item program__item--pro">
+          <h2 class="program__title">Набор массы</h2>
+          <p class="program__description">
+            Заработать авторитет среди дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="program__link-catalog" href="catalog.html">Каталог pro</a>
+        </li>
+      </ul>
     </section>
 
     <section class="advantages">
@@ -83,30 +81,28 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="#">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="https://via.placeholder.com/128x24" width="128" height="24"
           alt="Логотип Кэтэнэрджи">
       </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#">Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#">Фэисбук</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/">
-          <img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34"
-            alt="Логотим HTML Академии">
-        </a>
-      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Фэисбук</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="copyright__logo-image" src="https://via.placeholder.com/27x34" width="27" height="34"
+          alt="Логотип HTML Академии">
+      </a>
     </div>
   </footer>
 
