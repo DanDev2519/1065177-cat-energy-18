@@ -41,16 +41,45 @@
             <label class="form__label form__label--input" for="name">Имя:*</label>
             <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required autofocus>
           </li>
-          <li class="form__item-input">
+          <li class="form__item">
             <label class="form__label form__label--input" for="weight">Вес (кг):*</label>
             <input class="form__input" type="text" name="weight" id="weight" placeholder="7" required>
           </li>
-          <li class="form__item-input">
+          <li class="form__item">
             <label class="form__label form__label--input" for="age">Возраст (лет):</label>
             <input class="form__input" type="text" name="age" id="age" placeholder="7">
           </li>
         </ul>
-
+        <ul class="form__list form__list--radio">
+          <li class="form__item">
+            <input class="form__input form__input--radio visually-hidden" type="radio" name="program-type" value="slim"
+              id="program-slim" checked>
+            <label class="form__label form__label--radio" for="program-slim">Похудение</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--radio visually-hidden" type="radio" name="program-type" value="pro"
+              id="program-pro">
+            <label class="form__label form__label--radio" for="program-pro">Набор массы</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--radio visually-hidden" type="radio" name="program-type" value="no"
+              id="program-no">
+            <label class="form__label form__label--radio" for="program-no">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label form__label--input" for="email">E-mail:*</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+          </li>
+          <li class="form__item">
+            <label class="form__label form__label--input" for="tel">Телефон:*</label>
+            <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+          </li>
+        </ul>
       </fieldset>
 
 
