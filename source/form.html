@@ -38,32 +38,32 @@
         <legend class="form__legend visually-hidden">Основная информация</legend>
         <ul class="form__list">
           <li class="form__item">
-            <label class="form__label form__label--input" for="name">Имя:*</label>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Барсик" required autofocus>
+            <label class="form__label" for="name">Имя:*</label>
+            <input class="form__input form__input--required" type="text" name="name" id="name" placeholder="Барсик" required autofocus>
           </li>
           <li class="form__item">
-            <label class="form__label form__label--input" for="weight">Вес (кг):*</label>
-            <input class="form__input" type="text" name="weight" id="weight" placeholder="7" required>
+            <label class="form__label" for="weight">Вес (кг):*</label>
+            <input class="form__input form__input--required" type="text" name="weight" id="weight" placeholder="7" required>
           </li>
           <li class="form__item">
-            <label class="form__label form__label--input" for="age">Возраст (лет):</label>
+            <label class="form__label" for="age">Возраст (лет):</label>
             <input class="form__input" type="text" name="age" id="age" placeholder="7">
           </li>
         </ul>
         <ul class="form__list form__list--radio">
           <li class="form__item">
-            <input class="form__input form__input--radio visually-hidden" type="radio" name="program-type" value="slim"
-              id="program-slim" checked>
+            <input class="form__input visually-hidden" type="radio" name="program-type" value="slim"
+              id="programSlim" checked>
             <label class="form__label form__label--radio" for="program-slim">Похудение</label>
           </li>
           <li class="form__item">
-            <input class="form__input form__input--radio visually-hidden" type="radio" name="program-type" value="pro"
-              id="program-pro">
+            <input class="form__input visually-hidden" type="radio" name="program-type" value="pro"
+              id="programPro">
             <label class="form__label form__label--radio" for="program-pro">Набор массы</label>
           </li>
           <li class="form__item">
-            <input class="form__input form__input--radio visually-hidden" type="radio" name="program-type" value="no"
-              id="program-no">
+            <input class="form__input visually-hidden" type="radio" name="program-type" value="no"
+              id="programNo">
             <label class="form__label form__label--radio" for="program-no">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
@@ -72,12 +72,12 @@
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <ul class="form__list">
           <li class="form__item">
-            <label class="form__label form__label--input" for="email">E-mail:*</label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <label class="form__label form__label--email" for="email">E-mail:*</label>
+            <input class="form__input form__input--required" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="form__item">
-            <label class="form__label form__label--input" for="tel">Телефон:*</label>
-            <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+            <label class="form__label form__label--tel" for="tel">Телефон:*</label>
+            <input class="form__input form__input--required" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
@@ -90,20 +90,20 @@
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list form__list--checkbox">
           <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sweetener"
+            <input class="form__input visually-hidden" type="checkbox" name="sweetener"
               id="sweetener" checked>
             <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
           </li>
           <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="water" id="water">
+            <input class="form__input visually-hidden" type="checkbox" name="water" id="water">
             <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
           </li>
           <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+            <input class="form__input visually-hidden" type="checkbox" name="milk" id="milk">
             <label class="form__label form__label--checkbox" for="milk">Молоко</label>
           </li>
           <li class="form__item">
-            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins"
+            <input class="form__input visually-hidden" type="checkbox" name="vitamins"
               id="vitamins">
             <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
           </li>
@@ -124,10 +124,6 @@
         <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="page-footer__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586858!2d30.320853351959364!3d59.93871648178724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1574106859247!5m2!1sru!2sru"
-          width="600" height="450" allowfullscreen="">
-        </iframe>
       </div>
     </div>
     <div class="page-footer__wrapper">
