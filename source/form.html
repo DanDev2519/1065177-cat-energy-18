@@ -81,9 +81,38 @@
           </li>
         </ul>
       </fieldset>
-
-
-      <button class="form__submit button" type="submit">Отправить заявку</button>
+      <fieldset class="form__group">
+        <legend class="form__legend">Комментарий</legend>
+        <textarea class="form__textarea" name="comment" id="comment" cols="30" rows="10"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__legend">Дополнительно</legend>
+        <ul class="form__list form__list--checkbox">
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sweetener"
+              id="sweetener" checked>
+            <label class="form__label form__label--checkbox" for="sweetener">Сахарозаменитель</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="water" id="water">
+            <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+            <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins"
+              id="vitamins">
+            <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="form__bottom">
+        <button class="form__submit button" type="submit">Отправить заявку</button>
+        <p class="form__legend"> <sup>*</sup> — Обязательные поля </p>
+      </div>
     </form>
 
   </main>
