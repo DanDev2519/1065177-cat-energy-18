@@ -1,0 +1,19 @@
+.button {
+  display: block;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $leaf;
+
+  &:hover,
+  &:focus {
+    background-color: $grass;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $grass;
+  }
+}

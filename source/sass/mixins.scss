@@ -1,0 +1,44 @@
+//Миксины
+
+//Установка шрифта
+@mixin setFont($size: false, $color: false, $weight: false, $lh: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+//Размер
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//Обнуление списка и задание отступов
+@mixin list($padd...) {
+  list-style: none;
+  padding: $padd;
+}
+
+//Псевдо
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+//Фоновое иображение
+@mixin bgimg($color, $url, $repeat: no-repeat, $position: 0 0) {
+  background-color: $color;
+  background-image: $url;
+  background-repeat: $repeat;
+  background-position: $position;
+}

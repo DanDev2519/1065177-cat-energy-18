@@ -1,0 +1,29 @@
+.site-list {
+  @include list(0);
+}
+
+.site-list__item-link {
+  @include setFont(20px, $almBlack, 500, 1);
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      @include pseudo;
+      bottom: 0;
+      left: 0;
+
+      @include size(100%, 2px);
+      background-color: $leaf;
+    }
+  }
+}

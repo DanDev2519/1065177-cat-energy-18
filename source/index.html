@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,16 +14,16 @@
         <img class="page-header__logo-image" src="https://via.placeholder.com/191x39" width="191" height="39"
           alt="Логотип Кэтэнэрджи">
       </a>
-      <button class="main-nav__toggle">Открыть меню</button>
+      <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+        <li class="site-list__item site-list__item">
+          <a class="site-list__item-link site-list__item-link--active">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Подбор программы</a>
+          <a class="site-list__item-link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -31,7 +32,7 @@
       <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
       <img class="nutrition__product-image" src="https://via.placeholder.com/280x270" width="280" height="270"
         alt="Кэт энерджи с курицей для набора массы">
-      <a class="nutrition__link-program button" href="form.html"></a>
+      <a class="nutrition__link-program button" href="form.html">Подобрать программу</a>
     </div>
   </header>
 
