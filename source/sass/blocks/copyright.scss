@@ -1,0 +1,27 @@
+.copyright {
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:focus path,
+  &:active path {
+    fill: $leaf;
+  }
+}
+
+.copyright__link {
+  font-family: "Arial", sans-serif;
+
+  @include setFont(16px, $darkGray, 400, 1);
+}
+
+.copyright__logo {}
+
+.copyright__logo-image {
+  @include size(27px, 24px);
+
+  path {
+    fill: $brownishGrey;
+  }
+}

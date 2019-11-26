@@ -1,0 +1,26 @@
+.page-footer {}
+
+.page-footer__location {}
+
+.page-footer__cooperation {}
+
+.page-footer__map {}
+
+.page-footer__wrapper {}
+
+.page-footer__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__logo-image {}
+
+.page-footer__social {}
+
+.page-footer__copyright {}
