@@ -17,3 +17,17 @@
     background-color: $grass;
   }
 }
+
+.button--gray {
+  background-color: $lightGrey;
+
+  &:hover,
+  &:focus {
+    background-color: $whiteThree;
+  }
+
+  &:active {
+    color: rgba($darkGray, 0.3);
+    background-color: $whiteThree;
+  }
+}
