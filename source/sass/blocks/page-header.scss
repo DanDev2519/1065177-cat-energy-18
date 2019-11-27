@@ -13,4 +13,8 @@
   }
 }
 
-.page-header__logo-image {}
+.page-header__logo-image {
+  display: block;
+
+  @include size(191px, 39px);
+}
