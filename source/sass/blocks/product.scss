@@ -2,28 +2,31 @@
   border: 1px solid $whiteFive;
 }
 
-.product__lin {}
-
-.product__title {
-  @include setFont(16px, $almBlack, 400, 1.25);
+.product__link {
 }
 
-.product__image {}
+.product__title {
+  @include setFont(16px, $almBlack, 1.25);
+}
 
-.product__property-list {}
+.product__image {
+}
+
+.product__property-list {
+}
 
 .product__property-term {
   font-family: "Arial", sans-serif;
 
-  @include setFont(12px, $darkGray, 400, 1.33);
+  @include setFont(12px, $darkGray, 1.33);
 }
 
 .product__property-definition {
   font-family: "Arial", sans-serif;
 
-  @include setFont(12px, $darkGray, 400, 1.33);
+  @include setFont(12px, $darkGray, 1.33);
 }
 
 .product__buy-btn {
-  @include setFont(16px, $white, 400, 1.25);
+  @include setFont(16px, $white, 1.25);
 }

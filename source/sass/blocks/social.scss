@@ -8,13 +8,40 @@
 .social__link {
   display: block;
 
+  &:hover,
+  &:focus {
+    svg {
+      fill: $leaf;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      fill: $leaf;
+    }
+  }
+
+  svg {
+    fill: $brownishGrey;
+  }
+
   &--vk {
-    @include size(22px, 12px);
+    svg {
+      @include size(22px, 12px);
+    }
   }
+
   &--instagram {
-    @include size(17px, 17px);
+    svg {
+      @include size(17px, 17px);
+    }
   }
+
   &--fb {
-    @include size(18px, 19px);
+    svg {
+      @include size(18px, 19px);
+    }
   }
 }

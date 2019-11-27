@@ -1,7 +1,8 @@
-.advantages {}
+.advantages {
+}
 
 .advantages__title {
-  @include setFont(36px, $almBlack, 400, 1.67);
+  @include setFont(36px, $almBlack, 1.67);
 }
 
 .advantages__list {
@@ -9,13 +10,17 @@
 }
 
 .advantages__item {
-  @include setFont(14px, $darkGray, 400, 1.29);
+  @include setFont(14px, $darkGray, 1.29);
 
-  &--benefit {}
+  &--benefit {
+  }
 
-  &--convenience {}
+  &--convenience {
+  }
 
-  &--replacement {}
+  &--replacement {
+  }
 
-  &--improvement {}
+  &--improvement {
+  }
 }

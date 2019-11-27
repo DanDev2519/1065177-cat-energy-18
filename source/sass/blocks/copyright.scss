@@ -13,10 +13,11 @@
 .copyright__link {
   font-family: "Arial", sans-serif;
 
-  @include setFont(16px, $darkGray, 400, 1);
+  @include setFont(16px, $darkGray);
 }
 
-.copyright__logo {}
+.copyright__logo {
+}
 
 .copyright__logo-image {
   @include size(27px, 24px);

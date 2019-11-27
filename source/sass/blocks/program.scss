@@ -1,4 +1,5 @@
-.program {}
+.program {
+}
 
 .program__list {
   @include list(0);
@@ -7,22 +8,24 @@
 .program__item {
   background-color: $lightGrey;
 
-  &--slim {}
+  &--slim {
+  }
 
-  &--pro {}
+  &--pro {
+  }
 }
 
 .program__title {
-  @include setFont(24px, $almBlack, 400, 1.54);
+  @include setFont(24px, $almBlack, 1.54);
   text-transform: uppercase;
 }
 
 .program__description {
-  @include setFont(14px, $darkGray, 400, 1.29);
+  @include setFont(14px, $darkGray, 1.29);
 }
 
 .program__link-catalog {
-  @include setFont(16px, $almBlack, 400, 1);
+  @include setFont(16px);
   text-transform: uppercase;
 
   &:active {

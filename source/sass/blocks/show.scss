@@ -3,16 +3,16 @@
 }
 
 .show__title {
-  @include setFont(16px, $almBlack, 400, 1.25);
+  @include setFont(16px, $almBlack, 1.25);
   text-transform: uppercase;
   text-align: center;
 }
 
-.how__description {
-  @include setFont(12px, $darkGray, 400, 1.33);
+.show__description {
+  @include setFont(12px, $darkGray, 1.33);
   text-align: center;
 }
 
 .show__btn {
-  @include setFont(16px, $darkGray, 400, 1.25);
+  @include setFont(16px, $darkGray, 1.25);
 }

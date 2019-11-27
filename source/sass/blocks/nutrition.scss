@@ -1,24 +1,25 @@
 .nutrition {
-  @include bgimg($leaf, url("../../img/index-background-mobile@1x.jpg"));
+  @include bgimg($leaf, url("../img/index-background-mobile@1x.jpg"));
 }
 
 .nutrition__title {
   display: block;
 
-  @include setFont(36px, $white, 400, 1);
+  @include setFont(36px, $white);
   text-align: center;
 }
 
 .nutrition__slogan {
   display: block;
 
-  @include setFont(14px, $white, 400, 1);
+  @include setFont(14px, $white);
   text-align: center;
   text-transform: uppercase;
 }
 
-.nutrition__product-image {}
+.nutrition__product-image {
+}
 
 .nutrition__link-program {
-  @include setFont(14px, $white, 400, 1.29);
+  @include setFont(14px, $white, 1.29);
 }
