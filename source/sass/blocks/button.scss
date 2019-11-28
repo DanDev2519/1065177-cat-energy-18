@@ -1,0 +1,33 @@
+.button {
+  display: block;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $leaf;
+
+  &:hover,
+  &:focus {
+    background-color: $grass;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background-color: $grass;
+  }
+
+  &--gray {
+    background-color: $lightGrey;
+
+    &:hover,
+    &:focus {
+      background-color: $whiteThree;
+    }
+
+    &:active {
+      color: rgba($darkGray, 0.3);
+      background-color: $whiteThree;
+    }
+  }
+}

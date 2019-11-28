@@ -1,0 +1,6 @@
+.catalog-page {
+}
+
+.catalog-page__title {
+  @include setFont(36px, $almBlack, 1.67);
+}

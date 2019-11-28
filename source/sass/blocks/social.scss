@@ -1,0 +1,47 @@
+.social {
+  @include list(0);
+}
+
+.social__item {
+}
+
+.social__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $leaf;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    svg {
+      fill: $leaf;
+    }
+  }
+
+  svg {
+    fill: $brownishGrey;
+  }
+
+  &--vk {
+    svg {
+      @include size(22px, 12px);
+    }
+  }
+
+  &--instagram {
+    svg {
+      @include size(17px, 17px);
+    }
+  }
+
+  &--fb {
+    svg {
+      @include size(18px, 19px);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.page-header {
+  background-color: $white;
+}
+
+.page-header__logo {
+  display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+
+  @include size(191px, 39px);
+}

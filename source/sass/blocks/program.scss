@@ -1,0 +1,34 @@
+.program {
+}
+
+.program__list {
+  @include list(0);
+}
+
+.program__item {
+  background-color: $lightGrey;
+
+  &--slim {
+  }
+
+  &--pro {
+  }
+}
+
+.program__title {
+  @include setFont(24px, $almBlack, 1.54);
+  text-transform: uppercase;
+}
+
+.program__description {
+  @include setFont(14px, $darkGray, 1.29);
+}
+
+.program__link-catalog {
+  @include setFont(16px);
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

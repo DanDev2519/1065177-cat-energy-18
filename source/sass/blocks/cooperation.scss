@@ -1,0 +1,16 @@
+.cooperation {
+  background-color: $lightGrey;
+
+  &--white-bgc {
+    background-color: $white;
+  }
+}
+
+.cooperation__text {
+  @include setFont(16px, $almBlack, 1.25);
+  text-transform: uppercase;
+}
+
+.cooperation__address {
+  @include setFont(14px, $darkGray, 1.43);
+}
