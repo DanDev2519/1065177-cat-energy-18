@@ -1,6 +1,26 @@
 body {
+  min-width: $mobile-width;
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
+
+  background-color: $white;
+}
+
+// Временно в качетве фонового изображения
+body {
+  background: white url("../img/temp/cat-energy-index-mobile.png") no-repeat 50% 0;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background: white url("../img/temp/cat-energy-index-tablet.png") no-repeat 50% 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background: white url("../img/temp/cat-energy-index-desktop.png") no-repeat 50% 0;
+  }
 }
 
 img {

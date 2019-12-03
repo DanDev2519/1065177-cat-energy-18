@@ -34,3 +34,10 @@
   background-repeat: $repeat;
   background-position: $position;
 }
+
+@mixin center($width, $paddRL: 0) {
+  width: $width;
+  margin: 0 auto;
+  padding: 0 $paddRL;
+  box-sizing: content-box;
+}

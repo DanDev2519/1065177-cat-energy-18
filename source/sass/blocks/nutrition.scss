@@ -1,25 +1,157 @@
 .nutrition {
-  @include bgimg($leaf, url("../img/index-background-mobile@1x.jpg"));
+  position: relative;
+
+  @include center($mobile-width);
+  padding-top: 2px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient($leaf 305px, $white 305px);
+  background-size: 320px 305px, 100%;
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.nutrition__wrapper {
+  @include center(280px, 20px);
 }
 
 .nutrition__title {
+  position: relative;
   display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @include setFont(36px, $white);
   text-align: center;
+  z-index: 2;
 }
 
 .nutrition__slogan {
+  position: relative;
   display: block;
+  margin: 20px 0;
 
   @include setFont(14px, $white);
   text-align: center;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .nutrition__product-image {
+  display: block;
+  margin: 29px auto 3px;
+  width: 280px;
+  height: 270px;
+
+  &--mobile {
+    display: block;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .nutrition__link-program {
+  position: relative;
+
   @include setFont(14px, $white, 1.29);
+  padding: 11px 10px;
+  z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition {
+    @include center(708px, 30px);
+    padding-bottom: 509px;
+    background-image: none;
+  }
+
+  .nutrition__wrapper {
+    width: 490px;
+    margin: 58px 0 0 68px;
+  }
+
+  .nutrition__title {
+    margin-bottom: 40px;
+
+    @include setFont(60px, $almBlack);
+    text-align: left;
+  }
+
+  .nutrition__slogan {
+    margin-bottom: 48px;
+
+    @include setFont(20px, $almBlack);
+    text-align: left;
+  }
+
+  .nutrition__product-image {
+    position: absolute;
+    left: 30px;
+    bottom: -20px;
+
+    width: 709px;
+    height: 609px;
+    margin: 0;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .nutrition__link-program {
+    box-sizing: border-box;
+    width: 245px;
+
+    @include setFont(20px, $white, 1);
+    padding: 16px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition {
+    @include center(1220px, 40px);
+    padding-bottom: 188px;
+  }
+
+  .nutrition__wrapper {
+    width: 490px;
+    margin: 110px 0 0 61px;
+  }
+
+  .nutrition__title {
+  }
+
+  .nutrition__slogan {
+    margin-bottom: 53px;
+  }
+
+  .nutrition__product-image {
+    left: 490px;
+    bottom: 55px;
+
+    width: 552px;
+    height: 499px;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .nutrition__link-program {
+    padding: 16px 10px 16px 5px;
+  }
 }

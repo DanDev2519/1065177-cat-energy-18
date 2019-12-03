@@ -1,11 +1,15 @@
 .button {
   display: block;
+  padding: 10px;
 
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: $white;
 
   background-color: $leaf;
+  border: 0;
+  cursor: pointer;
 
   &:hover,
   &:focus {
