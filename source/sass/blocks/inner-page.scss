@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+}
+
+@media (min-width: $desktop-width) {
+  .inner-page .page-header {
+    background-image: none;
+  }
+  .inner-page .site-list__item-link {
+    color: $almBlack;
+
+    &--active::before {
+      background-color: $leaf;
+    }
+  }
+}
