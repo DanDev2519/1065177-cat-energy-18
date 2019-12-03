@@ -1,11 +1,14 @@
 .program {
+  @include center(280px, 20px);
 }
 
 .program__list {
   @include list(0);
+  margin: 22px 0;
 }
 
 .program__item {
+  margin: 20px 0;
   background-color: $lightGrey;
 
   &--slim {
@@ -15,20 +18,133 @@
   }
 }
 
+.program__item-wrapper {
+  padding: 20px;
+}
+
 .program__title {
+  margin: 0;
+  padding: 10px 0 16px 71px;
+
   @include setFont(24px, $almBlack, 1.54);
   text-transform: uppercase;
 }
 
 .program__description {
+  margin: 0;
+  padding: 14px 0 21px;
+
   @include setFont(14px, $darkGray, 1.29);
+  font-family: "Arial", sans-serif;
+
+  border-bottom: 1px solid $whiteFore;
 }
 
 .program__link-catalog {
+  display: block;
+  padding: 20px 50px 2px 0;
+  margin-right: 100px;
+
   @include setFont(16px);
   text-transform: uppercase;
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    @include center(708px, 30px);
+  }
+
+  .program__list {
+    margin: 20px 0;
+  }
+
+  .program__item {
+    margin-bottom: 30px;
+
+    &--slim {
+      .program__item-wrapper {
+        width: 375px;
+      }
+    }
+
+    &--pro {
+      .program__item-wrapper {
+        width: 344px;
+      }
+    }
+  }
+
+  .program__item-wrapper {
+    padding: 52px;
+  }
+
+  .program__title {
+    padding: 24px 0 11px;
+
+    @include setFont(36px, $almBlack, 1.03);
+  }
+
+  .program__description {
+    padding: 14px 0 37px;
+
+    @include setFont(16px, $darkGray, 1.5);
+
+    border-bottom: none;
+  }
+
+  .program__link-catalog {
+    padding: 20px 70px 9px 0;
+    margin-right: 170px;
+
+    @include setFont(20px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    @include center(1220px, 40px);
+  }
+
+  .program__list {
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__item {
+    margin: 0;
+    width: 570px;
+
+    &--slim {
+      .program__item-wrapper {
+        width: auto;
+      }
+    }
+
+    &--pro {
+      .program__item-wrapper {
+        width: auto;
+      }
+    }
+  }
+
+  .program__item-wrapper {
+    padding: 52px;
+  }
+
+  .program__title {
+    padding-left: 162px;
+  }
+
+  .program__description {
+    padding: 62px 0 12px;
+  }
+
+  .program__link-catalog {
+    margin-right: 270px;
   }
 }
