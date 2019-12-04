@@ -4,11 +4,13 @@
 
 .program__list {
   @include list(0);
-  margin: 22px 0;
+  margin: 22px 0 17px;
 }
 
 .program__item {
-  margin: 20px 0;
+  margin: 0;
+  margin-top: 20px;
+
   background-color: $lightGrey;
 
   &--slim {
@@ -110,7 +112,7 @@
   }
 
   .program__list {
-    margin: 80px 0;
+    margin: 80px 0 74px;
     display: flex;
     justify-content: space-between;
   }
