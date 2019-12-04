@@ -1,5 +1,6 @@
 .main-nav {
-  @include center($mobile-width);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-nav__toggle {
@@ -23,9 +24,10 @@
 .main-nav__list {
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .main-nav {
-    @include center(708px, 30px);
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     justify-content: space-between;
   }
@@ -35,9 +37,10 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .main-nav {
-    @include center(1220px, 40px);
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .main-nav__toggle {

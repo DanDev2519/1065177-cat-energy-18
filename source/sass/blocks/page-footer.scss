@@ -12,7 +12,6 @@
 }
 
 .page-footer__wrapper {
-  @include center(280px, 20px);
 }
 
 .page-footer__logo {
@@ -42,9 +41,8 @@
 .page-footer__copyright {
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .page-footer__wrapper {
-    @include center(708px, 30px);
     display: flex;
     justify-content: space-between;
   }
@@ -68,9 +66,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .page-footer__wrapper {
-    @include center(1220px, 40px);
   }
 
   .page-footer__logo {

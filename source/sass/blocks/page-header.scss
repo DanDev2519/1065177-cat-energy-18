@@ -12,7 +12,7 @@
 .page-header__logo {
   display: block;
 
-  padding: 11px 20px 15px 20px;
+  padding: 11px 0 15px;
 
   &:hover,
   &:focus {
@@ -38,7 +38,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .page-header__wrapper {
     display: block;
     border-bottom: none;
@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .page-header {
     background-image: url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(-90deg, #65a93c 50%, $white 50%);

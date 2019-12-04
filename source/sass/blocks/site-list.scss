@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .site-list {
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .site-list {
     width: 479px;
   }

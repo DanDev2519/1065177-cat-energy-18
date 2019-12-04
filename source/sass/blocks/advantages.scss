@@ -1,5 +1,4 @@
 .advantages {
-  @include center(280px, 20px);
 }
 
 .advantages__title {
@@ -33,9 +32,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .advantages {
-    @include center(708px, 30px);
   }
 
   .advantages__title {
@@ -74,9 +72,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .advantages {
-    @include center(1220px, 40px);
   }
 
   .advantages__title {

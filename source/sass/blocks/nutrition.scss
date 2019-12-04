@@ -1,7 +1,6 @@
 .nutrition {
   position: relative;
 
-  @include center($mobile-width);
   padding-top: 2px;
 
   background-image: url("../img/index-background-mobile@1x.jpg"),
@@ -12,7 +11,6 @@
 }
 
 .nutrition__wrapper {
-  @include center(280px, 20px);
 }
 
 .nutrition__title {
@@ -64,16 +62,15 @@
   z-index: 2;
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .nutrition {
-    @include center(708px, 30px);
     padding-bottom: 509px;
     background-image: none;
   }
 
   .nutrition__wrapper {
     width: 490px;
-    margin: 58px 0 0 68px;
+    margin: 56px 0 0 88px;
   }
 
   .nutrition__title {
@@ -117,15 +114,14 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .nutrition {
-    @include center(1220px, 40px);
     padding-bottom: 188px;
   }
 
   .nutrition__wrapper {
     width: 490px;
-    margin: 110px 0 0 61px;
+    margin: 107px 0 0 81px;
   }
 
   .nutrition__title {

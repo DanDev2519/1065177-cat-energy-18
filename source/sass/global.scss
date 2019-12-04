@@ -11,13 +11,13 @@ body {
 //   background: white url("../img/temp/cat-energy-index-mobile.png") no-repeat 50% 0;
 // }
 
-// @media (min-width: $tablet-width) {
+// @media #{$tablet} {
 //   body {
 //     background: white url("../img/temp/cat-energy-index-tablet.png") no-repeat 50% 0;
 //   }
 // }
 
-// @media (min-width: $desktop-width) {
+// @media #{$desktop} {
 //   body {
 //     background: white url("../img/temp/cat-energy-index-desktop.png") no-repeat 50% 0;
 //   }

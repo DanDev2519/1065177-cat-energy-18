@@ -1,5 +1,4 @@
 .program {
-  @include center(280px, 20px);
 }
 
 .program__list {
@@ -55,9 +54,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .program {
-    @include center(708px, 30px);
   }
 
   .program__list {
@@ -69,13 +67,13 @@
 
     &--slim {
       .program__item-wrapper {
-        width: 375px;
+        width: 478px;
       }
     }
 
     &--pro {
       .program__item-wrapper {
-        width: 344px;
+        width: 448px;
       }
     }
   }
@@ -106,9 +104,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
   .program {
-    @include center(1220px, 40px);
   }
 
   .program__list {
@@ -143,7 +140,7 @@
   }
 
   .program__description {
-    padding: 62px 0 12px;
+    padding: 64px 0 12px;
   }
 
   .program__link-catalog {

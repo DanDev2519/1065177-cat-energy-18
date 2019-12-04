@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media #{$tablet} {
   .social {
     min-height: auto;
   }
@@ -93,5 +93,5 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media #{$desktop} {
 }
