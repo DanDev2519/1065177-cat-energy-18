@@ -11,7 +11,7 @@
   margin: 0;
   margin-top: 20px;
 
-  background-color: $lightGrey;
+  background-color: $light-grey;
 
   &--slim {
   }
@@ -28,7 +28,7 @@
   margin: 0;
   padding: 10px 0 16px 71px;
 
-  @include setFont(24px, $almBlack, 1.54);
+  @include setFont(24px, $alm-black, 1.54);
   text-transform: uppercase;
 }
 
@@ -36,10 +36,10 @@
   margin: 0;
   padding: 14px 0 21px;
 
-  @include setFont(14px, $darkGray, 1.29);
+  @include setFont(14px, $dark-gray, 1.29);
   font-family: "Arial", sans-serif;
 
-  border-bottom: 1px solid $whiteFore;
+  border-bottom: 1px solid $white-fore;
 }
 
 .program__link-catalog {
@@ -87,13 +87,13 @@
   .program__title {
     padding: 24px 0 11px;
 
-    @include setFont(36px, $almBlack, 1.03);
+    @include setFont(36px, $alm-black, 1.03);
   }
 
   .program__description {
     padding: 14px 0 37px;
 
-    @include setFont(16px, $darkGray, 1.5);
+    @include setFont(16px, $dark-gray, 1.5);
 
     border-bottom: none;
   }

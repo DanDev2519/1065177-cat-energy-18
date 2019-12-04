@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: $lightGrey;
+  background-color: $light-grey;
 }
 
 .page-footer__location {
@@ -20,7 +20,7 @@
   padding: 26px 10px 29px;
 
   text-align: center;
-  border-bottom: 1px solid $whiteFore;
+  border-bottom: 1px solid $white-fore;
 
   &:hover,
   &:focus {
@@ -36,7 +36,7 @@
 }
 
 .page-footer__social {
-  border-bottom: 1px solid $whiteFore;
+  border-bottom: 1px solid $white-fore;
 }
 
 .page-footer__copyright {

@@ -1,18 +1,18 @@
 .show {
-  border: 1px solid $whiteFive;
+  border: 1px solid $white-five;
 }
 
 .show__title {
-  @include setFont(16px, $almBlack, 1.25);
+  @include setFont(16px, $alm-black, 1.25);
   text-transform: uppercase;
   text-align: center;
 }
 
 .show__description {
-  @include setFont(12px, $darkGray, 1.33);
+  @include setFont(12px, $dark-gray, 1.33);
   text-align: center;
 }
 
 .show__btn {
-  @include setFont(16px, $darkGray, 1.25);
+  @include setFont(16px, $dark-gray, 1.25);
 }

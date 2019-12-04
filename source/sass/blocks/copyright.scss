@@ -20,7 +20,7 @@
   padding-right: 130px;
   margin-left: -1px;
 
-  @include setFont(16px, $darkGray);
+  @include setFont(16px, $dark-gray);
   font-family: "Arial", sans-serif;
 }
 
@@ -34,7 +34,7 @@
   @include size(41px, 57px);
 
   path {
-    fill: $brownishGrey;
+    fill: $brownish-grey;
   }
 }
 

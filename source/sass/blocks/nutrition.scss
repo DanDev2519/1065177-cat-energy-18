@@ -79,14 +79,14 @@
   .nutrition__title {
     margin-bottom: 40px;
 
-    @include setFont(60px, $almBlack);
+    @include setFont(60px, $alm-black);
     text-align: left;
   }
 
   .nutrition__slogan {
     margin-bottom: 48px;
 
-    @include setFont(20px, $almBlack);
+    @include setFont(20px, $alm-black);
     text-align: left;
   }
 

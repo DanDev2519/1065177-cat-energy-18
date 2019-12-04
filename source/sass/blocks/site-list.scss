@@ -7,7 +7,7 @@
 .site-list__item {
   position: relative;
 
-  border-bottom: 1px solid $whiteTwo;
+  border-bottom: 1px solid $white-two;
 }
 
 .site-list__item-link {
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include setFont(20px, $almBlack, 1, 500);
+  @include setFont(20px, $alm-black, 1, 500);
 
   &:hover,
   &:focus {
@@ -46,7 +46,7 @@
     margin-top: 30px;
     text-align: left;
 
-    @include setFont(18px, $lightBlack, 1.39);
+    @include setFont(18px, $light-black, 1.39);
 
     &--active::before {
       @include pseudo();

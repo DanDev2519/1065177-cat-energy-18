@@ -22,16 +22,16 @@
   }
 
   &--gray {
-    background-color: $lightGrey;
+    background-color: $light-grey;
 
     &:hover,
     &:focus {
-      background-color: $whiteThree;
+      background-color: $white-three;
     }
 
     &:active {
-      color: rgba($darkGray, 0.3);
-      background-color: $whiteThree;
+      color: rgba($dark-gray, 0.3);
+      background-color: $white-three;
     }
   }
 }

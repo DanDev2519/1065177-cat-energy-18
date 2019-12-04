@@ -5,7 +5,7 @@
 .advantages__title {
   margin: 10px 0;
 
-  @include setFont(36px, $almBlack, 1.67);
+  @include setFont(36px, $alm-black, 1.67);
 }
 
 .advantages__list {
@@ -17,7 +17,7 @@
   margin: 6px 0;
   padding: 10px 0 10px 80px;
 
-  @include setFont(14px, $darkGray, 1.29);
+  @include setFont(14px, $dark-gray, 1.29);
   font-family: "Arial", sans-serif;
 
   &--benefit {
@@ -58,7 +58,7 @@
     margin: 0 80px 90px 0;
     padding: 112px 0 43px;
 
-    @include setFont(16px, $darkGray, 1.5);
+    @include setFont(16px, $dark-gray, 1.5);
 
     &--benefit {
     }

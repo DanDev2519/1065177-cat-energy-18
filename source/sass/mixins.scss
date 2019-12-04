@@ -1,7 +1,7 @@
 //Миксины
 
 //Установка шрифта
-@mixin setFont($size: 16px, $color: $almBlack, $lh: 1, $weight: 400) {
+@mixin setFont($size: 16px, $color: $alm-black, $lh: 1, $weight: 400) {
   font-size: $size;
   color: $color;
   font-weight: $weight;
