@@ -1,4 +1,6 @@
 .catalog-meal {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .catalog-meal__wrapper {
@@ -8,4 +10,18 @@
 }
 
 .catalog-meal__show-all {
+}
+
+@media #{$tablet} {
+  .catalog-meal {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media #{$desktop} {
+  .catalog-meal {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

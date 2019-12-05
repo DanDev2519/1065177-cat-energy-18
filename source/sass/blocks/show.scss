@@ -1,18 +1,30 @@
 .show {
-  border: 1px solid $white-five;
+  padding: 80px 20px 25px 23px;
+  outline: 1px solid $white-five;
 }
 
 .show__title {
+  display: block;
+
   @include setFont(16px, $alm-black, 1.25);
   text-transform: uppercase;
   text-align: center;
 }
 
 .show__description {
+  margin: 10px 2px 20px 0;
+
   @include setFont(12px, $dark-gray, 1.33);
+  font-family: "Arial", sans-serif;
   text-align: center;
 }
 
 .show__btn {
   @include setFont(16px, $dark-gray, 1.25);
+}
+
+@media #{$tablet} {
+}
+
+@media #{$desktop} {
 }

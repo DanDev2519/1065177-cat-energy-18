@@ -3,4 +3,18 @@
 
 .catalog-page__title {
   @include setFont(36px, $alm-black, 1.67);
+  padding-top: 15px;
+  padding-bottom: 28px;
+}
+
+@media #{$tablet} {
+  .catalog-page__title {
+    @include setFont(60px, $alm-black, 1);
+    padding-top: 15px;
+    padding-bottom: 28px;
+  }
+}
+
+@media #{$desktop} {
+
 }
