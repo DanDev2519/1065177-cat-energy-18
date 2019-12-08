@@ -24,7 +24,44 @@
 }
 
 @media #{$tablet} {
+  .show {
+    margin: 140px 30px 0;
+    padding: 165px 37px 25px 38px;
+  }
+
+  .show__title {
+    margin: 0 auto;
+    width: 135px;
+
+    @include setFont(20px, $alm-black, 1);
+  }
+
+  .show__description {
+    margin: 25px auto 86px;
+    width: 170px;
+
+    @include setFont(16px, $dark-gray, normal);
+  }
+
+  .show__btn {
+    width: 249px;
+  }
 }
 
 @media #{$desktop} {
+  .show {
+    margin: 142px 39px 0 40px;
+    padding: 162px 38px 25px 38px;
+  }
+
+  .show__title {
+  }
+
+  .show__description {
+    margin: 25px auto 88px;
+  }
+
+  .show__btn {
+    width: 169px;
+  }
 }

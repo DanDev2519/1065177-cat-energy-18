@@ -25,17 +25,9 @@
 }
 
 .page-header__logo-image {
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
+  display: block;
+  width: 191px;
+  height: 39px;
 }
 
 @media #{$tablet} {
@@ -50,17 +42,8 @@
   }
 
   .page-header__logo-image {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
-
-    &--desktop {
-      display: none;
-    }
+    width: 174px;
+    height: 59px;
   }
 }
 
@@ -82,16 +65,7 @@
   }
 
   .page-header__logo-image {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    width: 203px;
+    height: 60px;
   }
 }

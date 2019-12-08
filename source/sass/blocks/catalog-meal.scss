@@ -3,9 +3,6 @@
   padding-right: 0;
 }
 
-.catalog-meal__wrapper {
-}
-
 .catalog-meal__product {
 }
 
@@ -14,14 +11,12 @@
 
 @media #{$tablet} {
   .catalog-meal {
-    padding-left: 30px;
-    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 @media #{$desktop} {
   .catalog-meal {
-    padding-left: 40px;
-    padding-right: 40px;
   }
 }

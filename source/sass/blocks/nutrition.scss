@@ -40,18 +40,6 @@
   margin: 29px auto 3px;
   width: 280px;
   height: 270px;
-
-  &--mobile {
-    display: block;
-  }
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 .nutrition__link-program {
@@ -95,14 +83,6 @@
     width: 709px;
     height: 609px;
     margin: 0;
-
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
   }
 
   .nutrition__link-program {
@@ -137,14 +117,6 @@
 
     width: 552px;
     height: 499px;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
   }
 
   .nutrition__link-program {
