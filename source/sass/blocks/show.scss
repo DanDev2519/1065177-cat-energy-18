@@ -1,18 +1,67 @@
 .show {
-  border: 1px solid $whiteFive;
+  padding: 80px 20px 25px 23px;
+  outline: 1px solid $white-five;
 }
 
 .show__title {
-  @include setFont(16px, $almBlack, 1.25);
+  display: block;
+
+  @include setFont(16px, $alm-black, 1.25);
   text-transform: uppercase;
   text-align: center;
 }
 
 .show__description {
-  @include setFont(12px, $darkGray, 1.33);
+  margin: 10px 2px 20px 0;
+
+  @include setFont(12px, $dark-gray, 1.33);
+  font-family: "Arial", sans-serif;
   text-align: center;
 }
 
 .show__btn {
-  @include setFont(16px, $darkGray, 1.25);
+  @include setFont(16px, $dark-gray, 1.25);
+}
+
+@media #{$tablet} {
+  .show {
+    margin: 140px 30px 0;
+    padding: 165px 37px 25px 38px;
+  }
+
+  .show__title {
+    margin: 0 auto;
+    width: 135px;
+
+    @include setFont(20px, $alm-black, 1);
+  }
+
+  .show__description {
+    margin: 25px auto 86px;
+    width: 170px;
+
+    @include setFont(16px, $dark-gray, normal);
+  }
+
+  .show__btn {
+    width: 249px;
+  }
+}
+
+@media #{$desktop} {
+  .show {
+    margin: 142px 39px 0 40px;
+    padding: 162px 38px 25px 38px;
+  }
+
+  .show__title {
+  }
+
+  .show__description {
+    margin: 25px auto 88px;
+  }
+
+  .show__btn {
+    width: 169px;
+  }
 }

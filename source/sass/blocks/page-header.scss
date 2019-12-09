@@ -2,21 +2,70 @@
   background-color: $white;
 }
 
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid $white-two;
+}
+
 .page-header__logo {
   display: block;
 
-  &:hover,
-  &:focus {
+  padding: 11px 20px 15px;
+
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.8;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.6;
   }
 }
 
 .page-header__logo-image {
   display: block;
+  width: 191px;
+  height: 39px;
+}
 
-  @include size(191px, 39px);
+@media #{$tablet} {
+  .page-header__wrapper {
+    display: block;
+    border-bottom: none;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    padding-top: 24px;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media #{$desktop} {
+  .page-header {
+    background-image: url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(-90deg, #65a93c 50%, $white 50%);
+    background-size: 720px 696px, 100%;
+    background-repeat: no-repeat;
+    background-position: right center, center;
+  }
+
+  .page-header__wrapper {
+  }
+
+  .page-header__logo {
+    padding: 0;
+    margin-top: 53px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
+  }
 }

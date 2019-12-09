@@ -1,0 +1,15 @@
+@media #{$tablet} {
+}
+
+@media #{$desktop} {
+  .inner-page .page-header {
+    background-image: none;
+  }
+  .inner-page .site-list__item-link {
+    color: $alm-black;
+
+    &--active::before {
+      background-color: $leaf;
+    }
+  }
+}

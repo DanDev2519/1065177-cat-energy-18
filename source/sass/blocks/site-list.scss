@@ -1,21 +1,80 @@
 .site-list {
   @include list(0);
+
+  margin: 0;
 }
 
 .site-list__item {
+  position: relative;
+
+  border-bottom: 1px solid $white-two;
 }
 
 .site-list__item-link {
   display: block;
+  padding: 23px 10px 22px;
+  text-transform: uppercase;
+  text-align: center;
 
-  @include setFont(20px, $almBlack, 1, 500);
+  @include setFont(20px, $alm-black, 1, 500);
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     opacity: 0.6;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
+  }
+}
+
+@media #{$tablet} {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 440px;
+  }
+
+  .site-list__item {
+    border-bottom: none;
+  }
+
+  .site-list__item-link {
+    padding: 12px 0 8px 0;
+    margin-top: 30px;
+    text-align: left;
+
+    @include setFont(18px, $light-black, 1.39);
+
+    &--active::before {
+      @include pseudo();
+      @include size(100%, 2px);
+      left: 0;
+      bottom: 7px;
+      background-color: $leaf;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .site-list {
+    width: 479px;
+  }
+
+  .site-list__item {
+  }
+
+  .site-list__item-link {
+    padding: 2px 0 2px 0;
+    margin-top: 72px;
+
+    @include setFont(20px, $white, 1.25);
+
+    &--active::before {
+      bottom: 5px;
+      background-color: $white;
+    }
   }
 }

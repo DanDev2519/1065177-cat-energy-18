@@ -1,5 +1,5 @@
 .cooperation {
-  background-color: $lightGrey;
+  background-color: $light-grey;
 
   &--white-bgc {
     background-color: $white;
@@ -7,10 +7,10 @@
 }
 
 .cooperation__text {
-  @include setFont(16px, $almBlack, 1.25);
+  @include setFont(16px, $alm-black, 1.25);
   text-transform: uppercase;
 }
 
 .cooperation__address {
-  @include setFont(14px, $darkGray, 1.43);
+  @include setFont(14px, $dark-gray, 1.43);
 }

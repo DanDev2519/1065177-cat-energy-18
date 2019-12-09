@@ -1,25 +1,125 @@
 .nutrition {
-  @include bgimg($leaf, url("../img/index-background-mobile@1x.jpg"));
+  position: relative;
+
+  padding-top: 2px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient($leaf 305px, $white 305px);
+  background-size: 320px 305px, 100%;
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.nutrition__wrapper {
 }
 
 .nutrition__title {
+  position: relative;
   display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
   @include setFont(36px, $white);
   text-align: center;
+  z-index: 2;
 }
 
 .nutrition__slogan {
+  position: relative;
   display: block;
+  margin: 20px 0;
 
   @include setFont(14px, $white);
   text-align: center;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .nutrition__product-image {
+  display: block;
+  margin: 29px auto 3px;
+  width: 280px;
+  height: 270px;
 }
 
 .nutrition__link-program {
+  position: relative;
+
   @include setFont(14px, $white, 1.29);
+  padding: 11px 10px;
+  z-index: 2;
+}
+
+@media #{$tablet} {
+  .nutrition {
+    padding-bottom: 509px;
+    background-image: none;
+  }
+
+  .nutrition__wrapper {
+    width: 490px;
+    margin: 56px 0 0 88px;
+  }
+
+  .nutrition__title {
+    margin-bottom: 40px;
+
+    @include setFont(60px, $alm-black);
+    text-align: left;
+  }
+
+  .nutrition__slogan {
+    margin-bottom: 48px;
+
+    @include setFont(20px, $alm-black);
+    text-align: left;
+  }
+
+  .nutrition__product-image {
+    position: absolute;
+    left: 30px;
+    bottom: -20px;
+
+    width: 709px;
+    height: 609px;
+    margin: 0;
+  }
+
+  .nutrition__link-program {
+    box-sizing: border-box;
+    width: 245px;
+
+    @include setFont(20px, $white, 1);
+    padding: 16px 10px;
+  }
+}
+
+@media #{$desktop} {
+  .nutrition {
+    padding-bottom: 188px;
+  }
+
+  .nutrition__wrapper {
+    width: 490px;
+    margin: 107px 0 0 81px;
+  }
+
+  .nutrition__title {
+  }
+
+  .nutrition__slogan {
+    margin-bottom: 53px;
+  }
+
+  .nutrition__product-image {
+    left: 490px;
+    bottom: 55px;
+
+    width: 552px;
+    height: 499px;
+  }
+
+  .nutrition__link-program {
+    padding: 16px 10px 16px 5px;
+  }
 }
