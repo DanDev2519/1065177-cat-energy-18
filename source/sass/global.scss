@@ -6,23 +6,6 @@ body {
   background-color: $white;
 }
 
-// Временно в качетве фонового изображения
-// body {
-//   background: white url("../img/temp/cat-energy-index-mobile.png") no-repeat 50% 0;
-// }
-
-// @media #{$tablet} {
-//   body {
-//     background: white url("../img/temp/cat-energy-index-tablet.png") no-repeat 50% 0;
-//   }
-// }
-
-// @media #{$desktop} {
-//   body {
-//     background: white url("../img/temp/cat-energy-index-desktop.png") no-repeat 50% 0;
-//   }
-// }
-
 img {
   max-width: 100%;
 }
