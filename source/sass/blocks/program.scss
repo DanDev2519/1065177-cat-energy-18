@@ -7,15 +7,28 @@
 }
 
 .program__item {
+  position: relative;
   margin: 0;
   margin-top: 20px;
 
   background-color: $light-grey;
 
   &--slim {
+    &::after {
+      @include pseudo(url("../img/icon-cat-slim.svg"));
+      @include size(35px, 49px);
+      top: 22px;
+      left: 30px;
+    }
   }
 
   &--pro {
+    &::after {
+      @include pseudo(url("../img/icon-cat-pro.svg"));
+      @include size(67px, 28px);
+      top: 35px;
+      left: 13px;
+    }
   }
 }
 
@@ -24,11 +37,21 @@
 }
 
 .program__title {
+  position: relative;
   margin: 0;
   padding: 10px 0 16px 71px;
 
   @include setFont(24px, $alm-black, 1.54);
   text-transform: uppercase;
+
+  &::before {
+    @include pseudo;
+    top: 4px;
+    left: 1px;
+
+    border: 25px solid $leaf;
+    border-radius: 50%;
+  }
 }
 
 .program__description {
@@ -42,6 +65,7 @@
 }
 
 .program__link-catalog {
+  position: relative;
   display: block;
   padding: 20px 50px 2px 0;
   margin-right: 100px;
@@ -51,6 +75,13 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    @include pseudo(url("../img/icon-right-arrow-long.svg"));
+    @include size(25px, 12px);
+    top: 19px;
+    right: 20px;
   }
 }
 
@@ -69,11 +100,23 @@
       .program__item-wrapper {
         width: 478px;
       }
+
+      &::after {
+        // @include size(35px, 49px);
+        // top: 22px;
+        // left: 30px;
+      }
     }
 
     &--pro {
       .program__item-wrapper {
         width: 448px;
+      }
+
+      &::after {
+        // @include size(67px, 28px);
+        // top: 35px;
+        // left: 13px;
       }
     }
   }

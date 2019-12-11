@@ -49,7 +49,7 @@
     @include setFont(18px, $light-black, 1.39);
 
     &--active::before {
-      @include pseudo();
+      @include pseudo;
       @include size(100%, 2px);
       left: 0;
       bottom: 7px;

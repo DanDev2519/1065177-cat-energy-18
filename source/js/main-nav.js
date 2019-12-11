@@ -1,3 +1,4 @@
+// Выпадение/скрытие меню по нажатию на кнопку
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
