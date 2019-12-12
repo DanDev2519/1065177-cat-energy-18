@@ -66,7 +66,6 @@
   }
 
   .advantages__item {
-    // position: relative;
     width: 245px;
 
     margin: 0 80px 90px 0;
@@ -74,22 +73,44 @@
 
     @include setFont(16px, $dark-gray, 1.5);
 
-    // &--benefit::before {
-    //   @include pseudo(url("../img/advantage-leaf@1x.png"));
-    //   @include size(60px, 60px);
-    //   top: 1px;
-    //   left: 1px;
-    //   background-color: $leaf;
-    // }
+    &::before {
+      @include size(80px, 80px);
+      top: 0;
+      left: 0;
+      padding-top: 7px;
+      padding-left: 2px;
+    }
 
-    // // &--convenience::before {
-    // // }
+    &::after {
+      @include pseudo;
+      @include setFont(281px, $light-grey);
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
+    }
 
-    // // &--replacement::before {
-    // // }
+    &--benefit::after {
+      content: "1";
+      top: -39px;
+      right: 15px;
+    }
 
-    // // &--improvement::before {
-    // // }
+    &--convenience::after {
+      content: "2";
+      top: -40px;
+      right: 0;
+    }
+
+    &--replacement::after {
+      content: "3";
+      top: -40px;
+      right: -3px;
+    }
+
+    &--improvement::after {
+      content: "4";
+      top: -40px;
+      right: -6px;
+    }
   }
 }
 
@@ -109,17 +130,5 @@
 
     margin: 0 0 90px 0;
     padding: 112px 0 43px;
-
-    &--benefit {
-    }
-
-    &--convenience {
-    }
-
-    &--replacement {
-    }
-
-    &--improvement {
-    }
   }
 }
