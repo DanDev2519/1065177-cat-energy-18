@@ -107,11 +107,20 @@
   }
 
   .product__property-term {
+    position: relative;
     width: 84px;
     padding-bottom: 7px;
     margin-top: 10px;
 
     @include setFont(16px, $dark-gray, 1);
+
+    &::before {
+      @include pseudo();
+      @include size(249px, 1px);
+      background-color: $white-six;
+      bottom: -1px;
+      left: 0;
+    }
   }
 
   .product__property-definition {
@@ -138,6 +147,14 @@
 
   .product__wrapper {
     width: 167px;
+  }
+
+  .product__property-term {
+    &::before {
+      @include size(169px, 1px);
+      bottom: 1px;
+      left: 0;
+    }
   }
 
   .product__buy-btn {

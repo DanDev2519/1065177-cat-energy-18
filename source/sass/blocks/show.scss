@@ -1,6 +1,15 @@
 .show {
+  position: relative;
   padding: 80px 20px 25px 23px;
   outline: 1px solid $white-five;
+
+  &::before {
+    @include pseudo(url("../../img/icon-plus-mobile.svg"));
+    @include size(31px, 31px);
+    top: 27px;
+    left: 145px;
+    opacity: 0.2;
+  }
 }
 
 .show__title {
@@ -27,6 +36,13 @@
   .show {
     margin: 140px 30px 0;
     padding: 165px 37px 25px 38px;
+
+    &::before {
+      @include pseudo(url("../img/icon-plus.svg"));
+      @include size(61px, 61px);
+      top: 55px;
+      left: 133px;
+    }
   }
 
   .show__title {
@@ -52,6 +68,11 @@
   .show {
     margin: 142px 39px 0 40px;
     padding: 162px 38px 25px 38px;
+
+    &::before {
+      top: 52px;
+      left: 93px;
+    }
   }
 
   .show__title {
