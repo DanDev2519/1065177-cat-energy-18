@@ -40,9 +40,6 @@
   }
 }
 
-.main-nav__list {
-}
-
 @media #{$tablet} {
   .main-nav {
     padding-left: 30px;
@@ -60,8 +57,5 @@
   .main-nav {
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .main-nav__toggle {
   }
 }

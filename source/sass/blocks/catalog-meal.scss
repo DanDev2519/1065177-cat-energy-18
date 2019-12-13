@@ -3,20 +3,9 @@
   padding-right: 0;
 }
 
-.catalog-meal__product {
-}
-
-.catalog-meal__show-all {
-}
-
 @media #{$tablet} {
   .catalog-meal {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media #{$desktop} {
-  .catalog-meal {
   }
 }

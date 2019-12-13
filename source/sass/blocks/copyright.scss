@@ -53,22 +53,13 @@
     padding: 32px 0;
   }
 
-  .copyright__logo-image {
-  }
-}
+  @media #{$desktop} {
+    .copyright__link {
+      padding: 55px 0;
+    }
 
-@media #{$desktop} {
-  .copyright {
-  }
-
-  .copyright__link {
-    padding: 55px 0;
-  }
-
-  .copyright__logo {
-    padding: 35px 0;
-  }
-
-  .copyright__logo-image {
+    .copyright__logo {
+      padding: 35px 0;
+    }
   }
 }

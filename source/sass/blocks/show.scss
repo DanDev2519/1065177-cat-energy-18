@@ -4,7 +4,7 @@
   outline: 1px solid $white-five;
 
   &::before {
-    @include pseudo(url("../../img/icon-plus-mobile.svg"));
+    @include pseudo(url("../img/icon-plus-mobile.svg"));
     @include size(31px, 31px);
     top: 27px;
     left: 145px;
@@ -73,9 +73,6 @@
       top: 52px;
       left: 93px;
     }
-  }
-
-  .show__title {
   }
 
   .show__description {
