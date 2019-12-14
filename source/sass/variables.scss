@@ -25,10 +25,16 @@ $desktop: "(min-width: #{$desktop-width})";
 
 $mobile-only: "(max-width: #{$mobile-width-only})";
 
+$retina-dppx: 1.5dppx;
+
 // @media #{$tablet} {
 
 // }
 
 // @media #{$desktop} {
+
+// }
+
+// @media (min-resolution: $retina-dppx) {
 
 // }

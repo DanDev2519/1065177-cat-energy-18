@@ -29,18 +29,34 @@
 
   &--benefit::before {
     content: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      content: url("../img/advantage-leaf@2x.png");
+    }
   }
 
   &--convenience::before {
     content: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      content: url("../img/advantage-powder@2x.png");
+    }
   }
 
   &--replacement::before {
     content: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      content: url("../img/advantage-dining@2x.png");
+    }
   }
 
   &--improvement::before {
     content: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dppx) {
+      content: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
