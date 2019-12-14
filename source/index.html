@@ -12,16 +12,16 @@
 
 <body>
   <header class="page-header">
-    <nav class="main-nav container">
+    <nav class="main-nav main-nav--closed main-nav--nojs container">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <picture class="page-header__logo-image">
+          <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт энерджи">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--close">
+        <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -41,17 +41,17 @@
       <div class="nutrition__wrapper">
         <b class="nutrition__title">Функциональное питание для котов</b>
         <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
-        <picture class="nutrition__product-image">
+        <picture>
           <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img src="img/index-can-mobile@1x.png" alt="Кэт энерджи с курицей для набора массы">
+          <img class="nutrition__product-image" src="img/index-can-mobile@1x.png" alt="Кэт энерджи с курицей для набора массы">
         </picture>
         <a class="nutrition__link-program button" href="form.html">Подобрать программу</a>
       </div>
     </div>
   </header>
 
-  <main class="page-main">
+  <main>
     <h1 class="visually-hidden">Кэт энерджи - главная страница</h1>
 
     <section class="program container">
@@ -196,6 +196,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main-nav.js"></script>
 
 </body>
 

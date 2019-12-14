@@ -1,21 +1,40 @@
-.program {
-}
-
 .program__list {
   @include list(0);
   margin: 22px 0 17px;
 }
 
 .program__item {
+  position: relative;
   margin: 0;
   margin-top: 20px;
 
   background-color: $light-grey;
 
+  &::before {
+    @include pseudo;
+    top: 24px;
+    left: 22px;
+
+    border: 25px solid $leaf;
+    border-radius: 50%;
+  }
+
   &--slim {
+    &::after {
+      @include pseudo(url("../img/icon-cat-slim.svg"));
+      @include size(35px, 49px);
+      top: 22px;
+      left: 30px;
+    }
   }
 
   &--pro {
+    &::after {
+      @include pseudo(url("../img/icon-cat-pro.svg"));
+      @include size(67px, 28px);
+      top: 35px;
+      left: 13px;
+    }
   }
 }
 
@@ -42,9 +61,11 @@
 }
 
 .program__link-catalog {
+  position: relative;
   display: block;
   padding: 20px 50px 2px 0;
   margin-right: 100px;
+  width: 140px;
 
   @include setFont(16px);
   text-transform: uppercase;
@@ -52,12 +73,16 @@
   &:active {
     opacity: 0.3;
   }
+
+  &::after {
+    @include pseudo(url("../img/icon-right-arrow-long.svg"));
+    @include size(25px, 12px);
+    top: 19px;
+    right: 20px;
+  }
 }
 
 @media #{$tablet} {
-  .program {
-  }
-
   .program__list {
     margin: 20px 0;
   }
@@ -65,15 +90,37 @@
   .program__item {
     margin-bottom: 30px;
 
+    &::before {
+      top: 92px;
+      left: auto;
+      right: 61px;
+
+      border: 100px solid $leaf;
+    }
+
     &--slim {
       .program__item-wrapper {
         width: 478px;
+      }
+
+      &::after {
+        @include size(141px, 194px);
+        top: 80px;
+        left: auto;
+        right: 92px;
       }
     }
 
     &--pro {
       .program__item-wrapper {
         width: 448px;
+      }
+
+      &::after {
+        @include size(268px, 113px);
+        top: 135px;
+        left: auto;
+        right: 28px;
       }
     }
   }
@@ -99,15 +146,19 @@
   .program__link-catalog {
     padding: 20px 70px 9px 0;
     margin-right: 170px;
+    width: 200px;
 
     @include setFont(20px);
+
+    &::after {
+      @include size(24px, 11px);
+      top: 16px;
+      right: 47px;
+    }
   }
 }
 
 @media #{$desktop} {
-  .program {
-  }
-
   .program__list {
     margin: 80px 0 74px;
     display: flex;
@@ -118,15 +169,37 @@
     margin: 0;
     width: 570px;
 
+    &::before {
+      top: 47px;
+      left: 52px;
+      right: auto;
+
+      border: 50px solid $leaf;
+    }
+
     &--slim {
       .program__item-wrapper {
         width: auto;
+      }
+
+      &::after {
+        @include size(71px, 97px);
+        top: 41px;
+        left: 65px;
+        right: auto;
       }
     }
 
     &--pro {
       .program__item-wrapper {
         width: auto;
+      }
+
+      &::after {
+        @include size(134px, 57px);
+        top: 69px;
+        left: 34px;
+        right: auto;
       }
     }
   }
@@ -145,5 +218,9 @@
 
   .program__link-catalog {
     margin-right: 270px;
+
+    &::after {
+      @include size(25px, 12px);
+    }
   }
 }

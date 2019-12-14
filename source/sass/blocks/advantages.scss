@@ -1,6 +1,3 @@
-.advantages {
-}
-
 .advantages__title {
   margin: 10px 0;
 
@@ -13,29 +10,41 @@
 }
 
 .advantages__item {
+  position: relative;
   margin: 6px 0;
   padding: 10px 0 10px 80px;
 
   @include setFont(14px, $dark-gray, 1.29);
   font-family: "Arial", sans-serif;
 
-  &--benefit {
+  &::before {
+    @include pseudo($display: flex);
+    @include size(60px, 60px);
+    justify-content: center;
+    align-items: center;
+    background-color: $leaf;
+    top: 9px;
+    left: 0;
   }
 
-  &--convenience {
+  &--benefit::before {
+    content: url("../img/advantage-leaf@1x.png");
   }
 
-  &--replacement {
+  &--convenience::before {
+    content: url("../img/advantage-powder@1x.png");
   }
 
-  &--improvement {
+  &--replacement::before {
+    content: url("../img/advantage-dining@1x.png");
+  }
+
+  &--improvement::before {
+    content: url("../img/advantage-clock@1x.png");
   }
 }
 
 @media #{$tablet} {
-  .advantages {
-  }
-
   .advantages__title {
     margin: 45px 0;
 
@@ -58,29 +67,50 @@
 
     @include setFont(16px, $dark-gray, 1.5);
 
-    &--benefit {
+    &::before {
+      @include size(80px, 80px);
+      top: 0;
+      left: 0;
+      padding-top: 7px;
+      padding-left: 2px;
     }
 
-    &--convenience {
+    &::after {
+      @include pseudo;
+      @include setFont(281px, $light-grey);
+      font-family: "Oswald", "Arial", sans-serif;
+      z-index: -1;
     }
 
-    &--replacement {
+    &--benefit::after {
+      content: "1";
+      top: -39px;
+      right: 15px;
     }
 
-    &--improvement {
+    &--convenience::after {
+      content: "2";
+      top: -40px;
+      right: 0;
+    }
+
+    &--replacement::after {
+      content: "3";
+      top: -40px;
+      right: -3px;
+    }
+
+    &--improvement::after {
+      content: "4";
+      top: -40px;
+      right: -6px;
     }
   }
 }
 
 @media #{$desktop} {
-  .advantages {
-  }
-
   .advantages__title {
     margin: 72px 0;
-  }
-
-  .advantages__list {
   }
 
   .advantages__item {
@@ -88,17 +118,5 @@
 
     margin: 0 0 90px 0;
     padding: 112px 0 43px;
-
-    &--benefit {
-    }
-
-    &--convenience {
-    }
-
-    &--replacement {
-    }
-
-    &--improvement {
-    }
   }
 }
