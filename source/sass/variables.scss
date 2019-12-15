@@ -19,6 +19,7 @@ $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
+//Медиа выражения
 $mobile: "(min-width: #{$mobile-width})";
 $tablet: "(min-width: #{$tablet-width})";
 $desktop: "(min-width: #{$desktop-width})";
@@ -27,6 +28,7 @@ $mobile-only: "(max-width: #{$mobile-width-only})";
 
 $retina-dppx: 1.5dppx;
 
+$retina: "(min-resolution: #{$retina-dppx})";
 // @media #{$tablet} {
 
 // }
@@ -35,6 +37,6 @@ $retina-dppx: 1.5dppx;
 
 // }
 
-// @media (min-resolution: $retina-dppx) {
+// @media #{$retina} {
 
 // }
