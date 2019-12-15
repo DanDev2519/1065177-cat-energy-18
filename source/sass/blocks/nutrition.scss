@@ -5,6 +5,11 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg"),
     linear-gradient($leaf 305px, $white 305px);
+
+  @media #{$retina} {
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient($leaf 305px, $white 305px);
+  }
   background-size: 320px 305px, 100%;
   background-repeat: no-repeat;
   background-position: top, center;

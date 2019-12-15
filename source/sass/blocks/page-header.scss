@@ -51,6 +51,11 @@
   .page-header {
     background-image: url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(-90deg, #65a93c 50%, $white 50%);
+
+    @media #{$retina} {
+      background-image: url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(-90deg, #65a93c 50%, $white 50%);
+    }
     background-size: 720px 696px, 100%;
     background-repeat: no-repeat;
     background-position: right center, center;
