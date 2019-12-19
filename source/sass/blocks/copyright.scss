@@ -7,9 +7,9 @@
     opacity: 0.3;
   }
 
-  &:hover path,
-  &:focus path,
-  &:active path {
+  &:hover .copyright__logo-image,
+  &:focus .copyright__logo-image,
+  &:active .copyright__logo-image {
     fill: $leaf;
   }
 }
@@ -33,9 +33,7 @@
 .copyright__logo-image {
   @include size(41px, 57px);
 
-  path {
-    fill: $brownish-grey;
-  }
+  fill: $brownish-grey;
 }
 
 @media #{$tablet} {
