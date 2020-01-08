@@ -1,4 +1,5 @@
 .cooperation {
+  display: flex;
   background-color: $light-grey;
 
   &--white-bgc {
@@ -7,10 +8,51 @@
 }
 
 .cooperation__text {
+  width: 123px;
+  margin: 28px 18px 26px 0;
+
   @include setFont(16px, $alm-black, 1.25);
   text-transform: uppercase;
 }
 
 .cooperation__address {
+  width: 135px;
+  margin: 29px 0 23px;
+
   @include setFont(14px, $dark-gray, 1.43);
+  font-family: "Arial", sans-serif;
+}
+
+@media #{$tablet} {
+  .cooperation {
+    justify-content: space-between;
+  }
+
+  .cooperation__text {
+    width: 155px;
+    margin: 66px 18px 61px 42px;
+
+    @include setFont(20px, $alm-black, 1.25);
+  }
+
+  .cooperation__address {
+    width: 155px;
+    margin: 64px 42px 23px;
+
+    @include setFont(16px, $dark-gray, 1.25);
+    text-align: right;
+  }
+
+  .cooperation__address-city {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media #{$desktop} {
+  .cooperation {
+    background-color: $white;
+  }
+
+  //Дописать стили
 }

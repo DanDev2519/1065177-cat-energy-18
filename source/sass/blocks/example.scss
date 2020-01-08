@@ -1,0 +1,272 @@
+.example {
+  background-color: $light-grey;
+}
+
+.example__title {
+  @include setFont(36px, $alm-black, 1.67);
+  margin: 0;
+  padding-top: 17px;
+}
+
+.example__story {
+  @include setFont(14px, $dark-gray, 1.29);
+  font-family: "Arial", sans-serif;
+  margin: 23px 0 25px;
+  width: 266px;
+}
+
+.example__stats-list {
+  display: flex;
+  justify-content: space-between;
+
+  @include list(0);
+  margin: 16px 0;
+}
+
+.example__stats-item {
+  position: relative;
+}
+
+.example__stats-value {
+  display: block;
+  width: 124px;
+  min-height: 56px;
+  padding-top: 13px;
+
+  @include setFont(24px, $alm-black);
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid $white-six;
+}
+
+.example__stats-name {
+  @include pseudo();
+  top: 47px;
+  left: 18px;
+
+  margin: 0;
+  padding: 0 5px;
+  width: 87px;
+
+  @include setFont(12px, $dark-gray);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+
+  background-color: $light-grey;
+}
+
+.example__cost-wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.example__cost-name {
+  @include setFont(14px, $alm-black, 1.43);
+}
+
+.example__cost-value {
+  @include setFont(14px, $alm-black, 1.43);
+}
+
+.example__was-become {
+  margin: 0 -20px;
+}
+
+.example__visual {
+  margin: 20px 0;
+}
+
+.example__visual-img {
+  @include size(320px, 240px);
+  display: block;
+}
+
+.example__visual-become {
+  display: none;
+}
+
+@media #{$tablet} {
+  .example {
+    background-color: $white;
+  }
+
+  .example__title {
+    @include setFont(60px, $alm-black);
+    margin: 0;
+    padding-top: 42px;
+  }
+
+  .example__story {
+    @include setFont(16px, $dark-gray, 1.5);
+    margin: 65px 0 53px;
+    width: 676px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  .example__stats-list {
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+    margin: 0;
+  }
+
+  .example__stats-value {
+    width: 162px;
+    min-height: 72px;
+    padding-top: 15px;
+
+    @include setFont(30px, $alm-black, 1.23);
+  }
+
+  .example__stats-name {
+    top: 63px;
+    left: 8px;
+
+    margin: 0;
+    padding: 0 5px;
+    width: 144px;
+
+    @include setFont(14px, $dark-gray);
+
+    background-color: $white;
+
+    &--shorter {
+      left: 24px;
+      width: 114px;
+    }
+  }
+
+  .example__cost-wrapper {
+    text-align: right;
+    padding: 12px 0;
+  }
+
+  .example__cost-name {
+    display: block;
+
+    @include setFont(20px, $alm-black);
+  }
+
+  .example__cost-value {
+    display: block;
+    margin-top: 8px;
+
+    @include setFont(20px, $alm-black);
+  }
+
+  .example__was-become {
+    margin: 255px -30px 0;
+    background-image: linear-gradient(90deg, $light-grey 50%, $white-seven 50%);
+  }
+
+  .example__visual {
+    position: relative;
+    margin: 20px -20px;
+    height: 340px;
+  }
+
+  .example__wrapper-was {
+    @include pseudo();
+    width: 338px;
+    height: 517px;
+    left: 66px;
+    bottom: -8px;
+    overflow: hidden;
+  }
+
+  .example__wrapper-become {
+    @include pseudo();
+    width: 353px;
+    height: 517px;
+    right: 51px;
+    bottom: -8px;
+    overflow: hidden;
+  }
+
+  .example__visual-img {
+    @include size(690px, 517px);
+    max-width: none;
+  }
+
+  .example__visual-was {
+    z-index: 1;
+  }
+
+  .example__visual-become {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media #{$desktop} {
+  .example {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient($white 158px, $light-grey 158px);
+  }
+
+  .example__left {
+    width: 600px;
+  }
+
+  .example__title {
+    padding-top: 23px;
+  }
+
+  .example__story {
+    margin: 146px 0 68px;
+    width: 435px;
+  }
+
+  .example__wrapper {
+    display: block;
+  }
+
+  .example__stats-name {
+    background-color: $light-grey;
+  }
+
+  .example__cost-wrapper {
+    display: flex;
+    text-align: left;
+    padding: 12px 0;
+    margin: 48px 0 62px;
+  }
+
+  .example__cost-name {
+    margin-right: 65px;
+  }
+
+  .example__cost-value {
+    margin-top: 0;
+  }
+
+  .example__was-become {
+    width: 760px;
+    margin: 158px -40px 0;
+    background-image: linear-gradient(90deg, $light-grey 402px, $white-seven 402px);
+  }
+
+  .example__visual {
+    margin: 10px -20px;
+  }
+
+  .example__wrapper-was {
+    width: 364px;
+    left: 58px;
+    bottom: 22px;
+  }
+
+  .example__wrapper-become {
+    width: 325px;
+    right: 20px;
+    bottom: 22px;
+  }
+}

@@ -2,6 +2,10 @@
   background-color: $light-grey;
 }
 
+.page-footer__location {
+  margin: 0 -20px;
+}
+
 .page-footer__logo {
   display: block;
   padding: 26px 10px 29px;
@@ -24,6 +28,10 @@
 }
 
 @media #{$tablet} {
+  .page-footer__location {
+    margin: 0 -30px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -43,6 +51,10 @@
 }
 
 @media #{$desktop} {
+  .page-footer__location {
+    margin: 0 -40px;
+  }
+
   .page-footer__logo {
     padding: 50px 1px 60px;
     margin-right: 30px;
