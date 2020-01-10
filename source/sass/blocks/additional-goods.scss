@@ -1,0 +1,129 @@
+.additional-goods {
+  position: relative;
+}
+
+.additional-goods__title {
+  margin: 0 -1px;
+  padding: 28px 35px 34px 0;
+
+  @include setFont(24px, $alm-black);
+  border-bottom: 1px solid $white-six;
+
+  &::after {
+    @include pseudo();
+    @include size(53px, 3px);
+    top: 42px;
+    right: 0;
+    background-color: $leaf;
+  }
+}
+
+.additional-goods__gift {
+  margin: 39px 0 34px;
+
+  @include size(280px, 289px);
+  @include bgimg($leaf, url("../img/gift-photo-mobile@1x.jpg"));
+  background-size: 280px 289px;
+
+  @media #{$retina} {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.additional-goods__gift-condition {
+  position: relative;
+  padding: 187px 50px 15px;
+
+  @include setFont(16px, $white, 1.25);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+
+  &::before {
+    @include pseudo();
+    @include size(56px, 61px);
+    @include bgimg(transparent, url("../img/icon-gift.svg"));
+    top: 65px;
+    left: 113px;
+  }
+}
+
+@media #{$tablet} {
+  .additional-goods__title {
+    margin-right: 297px;
+    padding: 67px 25px 80px 39px;
+
+    @include setFont(36px, $alm-black);
+    border-bottom: none;
+    background-color: $white;
+
+    &::after {
+      @include size(768px, 3px);
+      top: 89px;
+      z-index: -1;
+    }
+  }
+
+  .additional-goods__gift {
+    margin: 70px 0 76px;
+
+    @include size(708px, 200px);
+    @include bgimg($leaf, url("../img/gift-photo-tablet@1x.jpg"));
+    background-size: 708px 200px;
+
+    @media #{$retina} {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .additional-goods__gift-condition {
+    padding: 72px 100px 15px 423px;
+
+    text-align: left;
+
+    &::before {
+      left: 90px;
+    }
+  }
+}
+
+@media #{$desktop} {
+  .additional-goods_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-goods__title {
+    margin-right: 847px;
+    margin-left: -40px;
+    padding: 74px 25px 80px 39px;
+
+    &::after {
+      @include size(1440px, 3px);
+      top: 96px;
+      right: -70px;
+    }
+  }
+
+  .additional-goods__gift {
+    margin: -1px 0 86px;
+
+    @include size(245px, 289px);
+    @include bgimg($leaf, url("../img/gift-photo-desktop@1x.jpg"));
+    background-size: 245px 289px;
+
+    @media #{$retina} {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
+  .additional-goods__gift-condition {
+    padding: 171px 35px 15px;
+
+    text-align: center;
+
+    &::before {
+      left: 96px;
+      top: 49px;
+    }
+  }
+}
