@@ -1,0 +1,28 @@
+.page-form {
+}
+
+.page-form__top {
+}
+
+.page-form__title {
+  margin: 15px 0;
+
+  @include setFont(36px, $alm-black, 1.67);
+}
+
+.page-form__info {
+  margin: 25px 0;
+  padding-right: 10px;
+
+  @include setFont(14px, $alm-black, 1.29);
+  text-transform: uppercase;
+}
+
+.page-form__form {
+}
+
+@media #{$tablet} {
+}
+
+@media #{$desktop} {
+}
