@@ -6,6 +6,10 @@
   margin: 0 -20px;
 }
 
+.page-footer__map {
+  @include size(100%, 362px);
+}
+
 .page-footer__logo {
   display: block;
   padding: 26px 10px 29px;
@@ -32,6 +36,10 @@
     margin: 0 -30px;
   }
 
+  .page-footer__map {
+    height: 396px;
+  }
+
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
@@ -53,6 +61,10 @@
 @media #{$desktop} {
   .page-footer__location {
     margin: 0 -40px;
+  }
+
+  .page-footer__map {
+    height: 400px;
   }
 
   .page-footer__logo {

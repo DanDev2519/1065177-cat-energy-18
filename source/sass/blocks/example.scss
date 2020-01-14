@@ -207,13 +207,23 @@
 
 @media #{$desktop} {
   .example {
-    display: flex;
-    justify-content: space-between;
     background-image: linear-gradient($white 158px, $light-grey 158px);
   }
 
+  .example__center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   .example__left {
-    width: 600px;
+    width: 573px;
+    margin: 0;
+  }
+
+  .example__right {
+    width: 725px;
+    margin: 0;
   }
 
   .example__title {
@@ -256,6 +266,7 @@
 
   .example__visual {
     margin: 10px -20px;
+    height: 350px;
   }
 
   .example__wrapper-was {
@@ -266,7 +277,7 @@
 
   .example__wrapper-become {
     width: 325px;
-    right: 20px;
+    right: 53px;
     bottom: 22px;
   }
 }

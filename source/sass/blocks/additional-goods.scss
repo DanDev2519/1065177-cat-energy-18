@@ -3,23 +3,27 @@
 }
 
 .additional-goods__title {
-  margin: 0 -1px;
-  padding: 28px 35px 34px 0;
+  margin: 0 33px 0 -20px;
+  padding: 28px 15px 34px 20px;
 
   @include setFont(24px, $alm-black);
-  border-bottom: 1px solid $white-six;
+
+  background-color: white;
 
   &::after {
     @include pseudo();
-    @include size(53px, 3px);
     top: 42px;
-    right: 0;
-    background-color: $leaf;
+    border-top: 3px solid $leaf;
+    right: calc(50% - 10px);
+    left: calc(50% - 10px);
+    margin-left: -50vw;
+    margin-right: -50vw;
+    z-index: -1;
   }
 }
 
 .additional-goods__gift {
-  margin: 39px 0 34px;
+  margin: 40px 0 35px;
 
   @include size(280px, 289px);
   @include bgimg($leaf, url("../img/gift-photo-mobile@1x.jpg"));
@@ -49,7 +53,7 @@
 
 @media #{$tablet} {
   .additional-goods__title {
-    margin-right: 297px;
+    margin: 0 297px 0 -2px;
     padding: 67px 25px 80px 39px;
 
     @include setFont(36px, $alm-black);
@@ -57,9 +61,7 @@
     background-color: $white;
 
     &::after {
-      @include size(768px, 3px);
       top: 89px;
-      z-index: -1;
     }
   }
 
@@ -98,9 +100,7 @@
     padding: 74px 25px 80px 39px;
 
     &::after {
-      @include size(1440px, 3px);
       top: 96px;
-      right: -70px;
     }
   }
 

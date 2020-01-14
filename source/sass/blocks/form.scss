@@ -16,10 +16,13 @@
 
   &::after {
     @include pseudo();
-    @include size(320px, 3px);
+    border-top: 3px solid $leaf;
     top: 42px;
-    right: -20px;
-    background-color: $leaf;
+    right: calc(50% - 10px);
+    left: calc(50% - 10px);
+    margin-left: -50vw;
+    margin-right: -50vw;
+
     z-index: -1;
   }
 }
@@ -213,9 +216,7 @@
     @include setFont(36px, $alm-black);
 
     &::after {
-      @include size(768px, 3px);
       top: 77px;
-      right: -70px;
     }
   }
 
