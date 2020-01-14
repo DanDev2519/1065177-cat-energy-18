@@ -1,9 +1,3 @@
-.page-form {
-}
-
-.page-form__top {
-}
-
 .page-form__title {
   margin: 15px 0;
 
@@ -18,11 +12,38 @@
   text-transform: uppercase;
 }
 
-.page-form__form {
-}
-
 @media #{$tablet} {
+  .page-form__title {
+    margin: 56px 0;
+
+    @include setFont(60px, $alm-black);
+  }
+
+  .page-form__info {
+    margin: 56px 0;
+    padding-right: 340px;
+    padding-left: 40px;
+
+    @include setFont(20px, $alm-black, 1.5);
+  }
+
+  .page-form__form {
+    padding: 0 70px;
+  }
 }
 
 @media #{$desktop} {
+  .page-form__title {
+    margin: 75px 0 56px;
+  }
+
+  .page-form__info {
+    margin: 55px 0;
+    padding-right: 890px;
+    padding-left: 0;
+  }
+
+  .page-form__form {
+    padding: 0 40px;
+  }
 }

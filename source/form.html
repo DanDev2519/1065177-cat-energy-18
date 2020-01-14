@@ -58,59 +58,63 @@
     <form class="page-form__form form container" action="https://echo.htmlacademy.ru" method="get">
       <fieldset class="form__group">
         <legend class="form__legend visually-hidden">Основная информация</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input form__input--required" type="text" name="name" id="name" placeholder="Барсик"
-              required="" autofocus="">
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="weight">Вес (кг):*</label>
-            <input class="form__input form__input--required" type="text" name="weight" id="weight" placeholder="7"
-              required="">
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__input" type="text" name="age" id="age" placeholder="7">
-          </li>
-        </ul>
-        <ul class="form__list form__list--radio">
-          <li class="form__item">
-            <input class="form__input visually-hidden" type="radio" name="program-type" value="slim" id="programSlim"
-              checked="">
-            <label class="form__label form__label--radio" for="programSlim">Похудение</label>
-          </li>
-          <li class="form__item">
-            <input class="form__input visually-hidden" type="radio" name="program-type" value="pro" id="programPro">
-            <label class="form__label form__label--radio" for="programPro">Набор массы</label>
-          </li>
-          <li class="form__item">
-            <input class="form__input visually-hidden" type="radio" name="program-type" value="no" id="programNo">
-            <label class="form__label form__label--radio" for="programNo">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
+        <div class="form__columns">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input form__input--required" type="text" name="name" id="name" placeholder="Барсик"
+                required="" autofocus="">
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="weight">Вес (кг):*</label>
+              <input class="form__input form__input--required" type="text" name="weight" id="weight" placeholder="7"
+                required="">
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="age">Возраст (лет):</label>
+              <input class="form__input" type="text" name="age" id="age" placeholder="7">
+            </li>
+          </ul>
+          <ul class="form__list form__list--radio">
+            <li class="form__item">
+              <input class="form__input visually-hidden" type="radio" name="program-type" value="slim" id="programSlim"
+                checked="">
+              <label class="form__label form__label--radio" for="programSlim">Похудение</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input visually-hidden" type="radio" name="program-type" value="pro" id="programPro">
+              <label class="form__label form__label--radio" for="programPro">Набор массы</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input visually-hidden" type="radio" name="program-type" value="no" id="programNo">
+              <label class="form__label form__label--radio" for="programNo">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
       <fieldset class="form__group">
-        <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
+        <legend class="form__legend">Контактные данные (владельца&nbsp;кота)</legend>
         <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label form__label--email" for="email">E-mail:*
-              <svg role="img" width="18" height="14">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-            </label>
-            <input class="form__input form__input--required" type="email" name="email" id="email"
-              placeholder="kuklachev@gmail.com" required="">
-          </li>
-          <li class="form__item">
-            <label class="form__label form__label--tel" for="tel">Телефон:*
-              <svg role="img" width="21" height="21">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-            </label>
-            <input class="form__input form__input--required" type="tel" name="tel" id="tel"
-              placeholder="8 (960) 900-60-90" required="">
-          </li>
+          <div class="form__columns">
+            <li class="form__item">
+              <label class="form__label form__label--email" for="email">E-mail:*
+                <svg role="img" width="18" height="14">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </label>
+              <input class="form__input form__input--required" type="email" name="email" id="email"
+                placeholder="kuklachev@gmail.com" required="">
+            </li>
+            <li class="form__item">
+              <label class="form__label form__label--tel" for="tel">Телефон:*
+                <svg role="img" width="21" height="21">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </label>
+              <input class="form__input form__input--required" type="tel" name="tel" id="tel"
+                placeholder="8 (960) 900-60-90" required="">
+            </li>
+          </div>
         </ul>
       </fieldset>
       <fieldset class="form__group">
