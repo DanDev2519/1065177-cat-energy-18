@@ -39,6 +39,7 @@
 }
 
 .form__item {
+  position: relative;
   margin: 14px 0 0;
   display: flex;
   justify-content: space-between;
@@ -46,6 +47,42 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  & .form__label--email ~ svg {
+    @include pseudo();
+    @include size(18px, 14px);
+    top: 15px;
+    left: 248px;
+    fill: $light-black;
+  }
+
+  & .form__label--tel ~ svg {
+    @include pseudo();
+    @include size(21px, 21px);
+    top: 13px;
+    left: 248px;
+    fill: $light-black;
+  }
+
+  &:hover .form__input,
+  &:focus .form__input {
+    border-color: $white-six;
+  }
+
+  &:active {
+    & .form__input {
+      border: 2px solid $dark-gray;
+      padding: 12px 14px 11px;
+    }
+
+    & .form__input + svg {
+      fill: $leaf;
+    }
+  }
+
+  & .form__input--required + svg {
+    fill: $light-pink;
   }
 }
 
@@ -103,21 +140,21 @@
 
   &--email {
     & svg {
-      @include pseudo();
-      @include size(18px, 14px);
-      top: 1px;
-      left: 248px;
-      fill: $light-black;
+      // @include pseudo();
+      // @include size(18px, 14px);
+      // top: 1px;
+      // left: 248px;
+      // fill: $light-black;
     }
   }
 
   &--tel {
     & svg {
-      @include pseudo();
-      @include size(21px, 21px);
-      top: -1px;
-      left: 248px;
-      fill: $light-black;
+      // @include pseudo();
+      // @include size(21px, 21px);
+      // top: -1px;
+      // left: 248px;
+      // fill: $light-black;
     }
   }
 }
@@ -132,6 +169,8 @@
   box-sizing: border-box;
 
   &--required {
+    border: 2px solid $light-pink;
+    padding: 12px 14px 11px;
   }
 
   &[name="name"] {
@@ -247,6 +286,22 @@
     &:last-child {
       margin-bottom: 10px;
     }
+
+    &:active {
+      & .form__input {
+        padding: 9px 44px 9px 19px;
+      }
+    }
+
+    & .form__label--email ~ svg {
+      top: 19px;
+      left: 594px;
+    }
+
+    & .form__label--tel ~ svg {
+      top: 17px;
+      left: 594px;
+    }
   }
 
   .form__label {
@@ -281,8 +336,8 @@
 
     &--email {
       & svg {
-        top: 3px;
-        left: 594px;
+        // top: 3px;
+        // left: 594px;
       }
     }
 
@@ -290,8 +345,8 @@
       margin: 0 16px 0 -3px;
 
       & svg {
-        top: 1px;
-        left: 597px;
+        // top: 1px;
+        // left: 597px;
       }
     }
   }
@@ -302,6 +357,7 @@
     @include setFont(20px, $dark-gray);
 
     &--required {
+      padding: 9px 19px;
     }
 
     &[name="name"] {
@@ -411,6 +467,16 @@
 
   .form__item {
     margin: 10px -1px 10px 2px;
+
+    & .form__label--email ~ svg {
+      top: 19px;
+      left: 531px;
+    }
+
+    & .form__label--tel ~ svg {
+      top: 17px;
+      left: 531px;
+    }
   }
 
   .form__label {
@@ -420,21 +486,18 @@
 
     &--email {
       & svg {
-        left: 531px;
+        // left: 531px;
       }
     }
 
     &--tel {
       & svg {
-        left: 534px;
+        // left: 534px;
       }
     }
   }
 
   .form__input {
-    &--required {
-    }
-
     &[name="name"] {
       width: 506px;
     }
