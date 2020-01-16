@@ -33,7 +33,7 @@
   }
 
   &--vk {
-    padding: 22px 14px 22px 26px;
+    padding: 18px 14px 20px 26px;
 
     svg {
       @include size(22px, 12px);
@@ -41,7 +41,7 @@
   }
 
   &--instagram {
-    padding: 24px 22px 19px 22px;
+    padding: 21px 22px 18px 22px;
 
     svg {
       @include size(17px, 17px);
@@ -49,7 +49,7 @@
   }
 
   &--fb {
-    padding: 22px 31px 19px 13px;
+    padding: 22px 31px 17px 13px;
 
     svg {
       @include size(18px, 19px);
@@ -68,7 +68,7 @@
 
   .social__link {
     &--vk {
-      padding: 52px 6px 52px 24px;
+      padding: 63px 6px 52px 25px;
 
       svg {
         @include size(30px, 16px);
@@ -76,7 +76,7 @@
     }
 
     &--instagram {
-      padding: 50px 20px;
+      padding: 63px 20px;
 
       svg {
         @include size(23px, 23px);
@@ -84,7 +84,7 @@
     }
 
     &--fb {
-      padding: 46px 20px 46px 10px;
+      padding: 60px 20px 46px 10px;
 
       svg {
         @include size(14px, 28px);

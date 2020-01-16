@@ -12,17 +12,6 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async=""></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
-  <script type="text/javascript">
-    ymaps.ready(init);
-    function init() {
-      var myMap = new ymaps.Map("map", {
-        center: [59.938631, 30.323055],
-        zoom: 17
-      });
-    }
-  </script>
 </head>
 
 <body class="inner-page">
@@ -365,8 +354,13 @@
             class="cooperation__address-city">Санкт-Петербург</span></p>
       </div>
       <div class="page-footer__map">
+          <h2 class="visually-hidden">Карта расположения магазина</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716387402!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579207229716!5m2!1sru!2sru"
+            width="320" height="362" allowfullscreen=""></iframe>
+          <p class="page-footer__map-img"></p>
+        </div>
       </div>
-    </div>
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэтэнэрджи">

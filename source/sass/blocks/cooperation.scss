@@ -55,6 +55,24 @@
   }
 
   //Дописать стили
-  .cooperation {
+  .cooperation__text {
+    // width: 155px;
+    margin: 66px 18px 61px 36px;
+
+    // @include setFont(20px, $alm-black, 1.25);
   }
+
+  .cooperation__address {
+    // width: 155px;
+    margin: 64px 50px 23px;
+
+    // @include setFont(16px, $dark-gray, 1.25);
+    text-align: left;
+  }
+
+  .cooperation__address-city {
+    // display: block;
+    // margin-top: 20px;
+  }
+
 }
