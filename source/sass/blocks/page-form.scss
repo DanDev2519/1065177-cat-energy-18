@@ -1,0 +1,49 @@
+.page-form__title {
+  margin: 15px 0;
+
+  @include setFont(36px, $alm-black, 1.67);
+}
+
+.page-form__info {
+  margin: 25px 0;
+  padding-right: 10px;
+
+  @include setFont(14px, $alm-black, 1.29);
+  text-transform: uppercase;
+}
+
+@media #{$tablet} {
+  .page-form__title {
+    margin: 56px 0;
+
+    @include setFont(60px, $alm-black);
+  }
+
+  .page-form__info {
+    margin: 56px 0;
+    padding-right: 340px;
+    padding-left: 40px;
+
+    @include setFont(20px, $alm-black, 1.5);
+  }
+
+  .page-form__form {
+    padding: 0 70px;
+  }
+}
+
+@media #{$desktop} {
+  .page-form__title {
+    margin: 75px 0 56px;
+  }
+
+  .page-form__info {
+    margin: 55px 0;
+    padding-right: 890px;
+    padding-left: 0;
+  }
+
+  .page-form__form {
+    padding: 0 40px;
+  }
+}

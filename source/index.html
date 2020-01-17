@@ -12,6 +12,9 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.min.js" async=""></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=3202873f-dd10-44ce-bd98-0acd2cf0f77d" async>
+  </script> -->
+  <!-- <script src="js/map.js"></script> -->
 </head>
 
 <body>
@@ -55,9 +58,12 @@
             srcset="img/content/index-can-desktop@1x.webp 1x, img/content/index-can-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
             srcset="img/content/index-can-tablet@1x.webp 1x, img/content/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/index-can-mobile@1x.webp 1x, img/content/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/content/index-can-desktop@1x.png 1x, img/content/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/content/index-can-tablet@1x.jpg 1x, img/content/index-can-tablet@2x.jpg 2x">
+          <source type="image/webp"
+            srcset="img/content/index-can-mobile@1x.webp 1x, img/content/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)"
+            srcset="img/content/index-can-desktop@1x.png 1x, img/content/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/content/index-can-tablet@1x.jpg 1x, img/content/index-can-tablet@2x.jpg 2x">
           <img class="nutrition__product-image" src="img/content/index-can-mobile@1x.png"
             srcset="img/content/index-can-mobile@2x.png 2x" alt="Кэт энерджи с курицей для набора массы">
         </picture>
@@ -113,40 +119,78 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__stiry">
-        Борис сбросил 5 кг за 2 месяца, просто
-        заменив свой обычный корм на Cat
-        Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не
-        менял своих привычек и по-прежнему
-        спит по 16 часов в день.
-      </p>
-      <ul class="example__stats-list">
-        <li class="example__stats-item">
-          <b class="example__stats-value">5 кг</b>
-          <p class="example__stats-name">снижение веса</p>
-        </li>
-        <li class="example__stats-item">
-          <b class="example__stats-value">60 дней</b>
-          <p class="example__stats-name">затрачено времени</p>
-        </li>
-      </ul>
-      <p class="example__cost-name">Затраты на питание: </p>
-      <p class="example__cost-value">15 000 руб.</p>
-      <div class="example__was-become">
-        <div class="example__visual">
-          <img class="example__visual-was" src="img/content/before-mobile@1x.png" width="311" height="232"
-            alt="Вид кота до замены корма на Cat Energy">
-          <img class="example__visual-become" src="img/content/after-mobile@1x.png" width="311" height="232"
-            alt="Вид кота после замены корма на Cat Energy">
-        </div>
-        <div class="example__slider slider">
-          <div class="slider__scale">
-            <div class="slider__bar"></div>
+      <div class="example__center">
+        <div class="example__left container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__story">
+            Борис сбросил 5 кг за 2 месяца, просто
+            заменив свой обычный корм на Cat
+            Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не
+            менял своих привычек и по-прежнему
+            спит по 16 часов в день.
+          </p>
+          <div class="example__wrapper">
+            <ul class="example__stats-list">
+              <li class="example__stats-item">
+                <b class="example__stats-value">5 кг</b>
+                <p class="example__stats-name example__stats-name--shorter">снижение веса</p>
+              </li>
+              <li class="example__stats-item">
+                <b class="example__stats-value">60 дней</b>
+                <p class="example__stats-name">затрачено времени</p>
+              </li>
+            </ul>
+            <div class="example__cost-wrapper">
+              <span class="example__cost-name">Затраты на питание: </span>
+              <span class="example__cost-value">15 000 руб.</span>
+            </div>
           </div>
-          <button class="slider__toggle slider__toggle--was" type="button">Было</button>
-          <button class="slider__toggle slider__toggle--become" type="button">Стало</button>
+        </div>
+        <div class="example__right">
+          <div class="example__was-become container">
+            <div class="example__visual">
+              <div class="example__wrapper-was">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/content/before-desktop@1x.webp 1x, img/content/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/content/before-tablet@1x.webp 1x, img/content/before-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/before-mobile@1x.webp 1x, img/content/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)"
+                    srcset="img/content/before-desktop@1x.png 1x, img/content/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/before-tablet@1x.png 1x, img/content/before-tablet@2x.png 2x">
+                  <img class="example__visual-img example__visual-was" src="img/content/before-mobile@1x.png"
+                    srcset="img/content/before-mobile@2x.png 2x" alt="Вид кота до замены корма на Cat Energy">
+                </picture>
+              </div>
+              <div class="example__wrapper-become">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/content/after-desktop@1x.webp 1x, img/content/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/content/after-tablet@1x.webp 1x, img/content/after-tablet@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/content/after-mobile@1x.webp 1x, img/content/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)"
+                    srcset="img/content/after-desktop@1x.png 1x, img/content/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/content/after-tablet@1x.png 1x, img/content/after-tablet@2x.png 2x">
+                  <img class="example__visual-img example__visual-become" src="img/content/after-mobile@1x.jpg"
+                    srcset="img/content/after-mobile@2x.jpg 2x" alt="Вид кота после замены корма на Cat Energy">
+                </picture>
+              </div>
+            </div>
+            <div class="example__slider slider">
+              <div class="slider__scale">
+                <div class="slider__bar"></div>
+              </div>
+              <button class="slider__toggle slider__toggle--was" type="button">Было</button>
+              <button class="slider__toggle slider__toggle--become" type="button">Стало</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -155,11 +199,17 @@
 
   <footer class="page-footer">
     <div class="page-footer__location">
-      <div class="page-footer__cooperation cooperation cooperation--white-bgc">
-        <b class="cooperation__text">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__cooperation cooperation cooperation--white-bgc container">
+        <b class="cooperation__text">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span
+            class="cooperation__address-city">Санкт-Петербург</span></p>
       </div>
       <div class="page-footer__map">
+        <h2 class="visually-hidden">Карта расположения магазина</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716387402!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1579207229716!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen=""></iframe>
+        <p class="page-footer__map-img"></p>
       </div>
     </div>
     <div class="page-footer__wrapper container">

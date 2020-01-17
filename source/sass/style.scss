@@ -18,6 +18,8 @@
 //index.html
 @import "source/sass/blocks/program.scss";
 @import "source/sass/blocks/advantages.scss";
+@import "source/sass/blocks/example.scss";
+@import "source/sass/blocks/slider.scss";
 //footer
 @import "source/sass/blocks/page-footer.scss";
 @import "source/sass/blocks/cooperation.scss";
@@ -29,11 +31,8 @@
 @import "source/sass/blocks/catalog-meal.scss";
 @import "source/sass/blocks/product.scss";
 @import "source/sass/blocks/show.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
-// @import "source/sass/blocks/.scss";
+@import "source/sass/blocks/additional-goods.scss";
+@import "source/sass/blocks/good.scss";
+//form.html
+@import "source/sass/blocks/page-form.scss";
+@import "source/sass/blocks/form.scss";
