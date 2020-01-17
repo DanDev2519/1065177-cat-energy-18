@@ -88,7 +88,7 @@
     }
   }
 
-  & .form__input--required + svg {
+  & .form__input--invalid + svg {
     fill: $light-pink;
   }
 }
@@ -163,7 +163,7 @@
   border: 1px solid rgba($color: $white-six, $alpha: 0.5);
   box-sizing: border-box;
 
-  &--required {
+  &--invalid {
     border: 2px solid $light-pink;
     padding: 12px 14px 11px;
   }
@@ -338,7 +338,7 @@
 
     @include setFont(20px, $dark-gray);
 
-    &--required {
+    &--invalid {
       padding: 9px 19px;
     }
 
