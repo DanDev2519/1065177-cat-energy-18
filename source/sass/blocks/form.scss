@@ -7,6 +7,7 @@
 }
 
 .form__legend {
+  position: relative;
   margin: 0 77px 0 -20px;
   padding: 28px 23px 20px 20px;
   min-width: 30px;
@@ -20,8 +21,8 @@
     top: 42px;
     right: calc(50% - 10px);
     left: calc(50% - 10px);
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -150vw;
+    margin-right: -150vw;
 
     z-index: -1;
   }
@@ -334,6 +335,7 @@
   }
 
   .form__input {
+    min-height: 50px;
     padding: 10px 19px;
 
     @include setFont(20px, $dark-gray);
@@ -408,6 +410,7 @@
 
 @media #{$desktop} {
   .form__columns {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
