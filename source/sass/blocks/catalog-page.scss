@@ -1,3 +1,7 @@
+.catalog-page {
+  overflow: hidden;
+}
+
 .catalog-page__title {
   @include setFont(36px, $alm-black, 1.67);
   padding-top: 15px;

@@ -170,7 +170,7 @@
 
   .example__visual {
     position: relative;
-    margin: 20px -20px;
+    margin: 20px 0;
     height: 340px;
   }
 
@@ -178,7 +178,7 @@
     @include pseudo();
     width: 338px;
     height: 517px;
-    left: 66px;
+    left: 46px;
     bottom: -8px;
     overflow: hidden;
   }
@@ -187,7 +187,7 @@
     @include pseudo();
     width: 353px;
     height: 517px;
-    right: 51px;
+    right: 31px;
     bottom: -8px;
     overflow: hidden;
   }
@@ -210,13 +210,16 @@
 
 @media #{$desktop} {
   .example {
-    background-image: linear-gradient($white 158px, $light-grey 158px);
+    // background-image: linear-gradient($white 158px, $light-grey 158px);
+    background-image: linear-gradient(90deg, $light-grey calc(50% + 325px), $white-seven calc(50% + 325px));
   }
 
   .example__center {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-image: linear-gradient($white 158px, transparent 158px);
+
   }
 
   .example__left {
@@ -227,7 +230,7 @@
   .example__right {
     width: 725px;
     margin: 0;
-    padding-left: 40px;
+    // padding-left: 40px;
     background-image: none;
   }
 
@@ -264,25 +267,30 @@
   }
 
   .example__was-become {
-    width: 760px;
-    margin: 158px -40px 0;
-    background-image: linear-gradient(90deg, $light-grey 402px, $white-seven 402px);
+    // width: 760px;
+    // margin: 158px -40px 0;
+    width: 725px;
+    margin: 158px 0 0;
+    // background-image: linear-gradient(90deg, $light-grey 402px, $white-seven 402px);
   }
 
   .example__visual {
-    margin: 10px -20px;
+    // margin: 10px -20px;
+    margin: 10px 0;
     height: 350px;
   }
 
   .example__wrapper-was {
     width: 364px;
-    left: 58px;
+    // left: 58px;
+    left: 36px;
     bottom: 22px;
   }
 
   .example__wrapper-become {
     width: 325px;
-    right: 53px;
+    // right: 53px;
+    right: 0;
     bottom: 22px;
   }
 }
