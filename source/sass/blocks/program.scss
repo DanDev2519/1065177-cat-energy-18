@@ -70,15 +70,30 @@
   @include setFont(16px);
   text-transform: uppercase;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::after {
     @include pseudo(url("../img/icon-right-arrow-long.svg"));
     @include size(25px, 12px);
     top: 19px;
     right: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      content: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      right: 12px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      content: url("../img/icon-right-arrow-verylong.svg");
+      width: 33px;
+      right: 12px;
+    }
   }
 }
 
@@ -154,6 +169,21 @@
       @include size(24px, 11px);
       top: 16px;
       right: 47px;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        content: url("../img/icon-right-arrow-verylong.svg");
+        right: 39px;
+      }
+    }
+
+    &:active {
+      &::after {
+        content: url("../img/icon-right-arrow-verylong.svg");
+        right: 39px;
+      }
     }
   }
 }

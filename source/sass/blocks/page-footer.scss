@@ -6,6 +6,14 @@
   position: relative;
 }
 
+.page-footer__adress {
+  background-color: $light-grey;
+
+  &--white-bgc {
+    background-color: $white;
+  }
+}
+
 .page-footer__map {
   position: relative;
   overflow: hidden;

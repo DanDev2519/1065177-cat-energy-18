@@ -3,14 +3,12 @@
 
   padding-top: 2px;
 
-  background-image: url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient($leaf 305px, $white 305px);
+  background-image: url("../img/index-background-mobile@1x.jpg");
 
   @media #{$retina} {
-    background-image: url("../img/index-background-mobile@2x.jpg"),
-      linear-gradient($leaf 305px, $white 305px);
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
-  background-size: 320px 305px, 100%;
+  background-size: 320px 305px;
   background-repeat: no-repeat;
   background-position: top, center;
 }

@@ -30,7 +30,7 @@
 
   @include setFont(16px, $alm-black, 1.25);
   text-transform: uppercase;
-  word-break: break-all;
+  // word-break: break-all;
 }
 
 .product__property-list {
@@ -95,7 +95,7 @@
   }
 
   .product__link-title {
-    width: 130px;
+    width: 150px;
     margin: 37px auto 16px;
   }
 

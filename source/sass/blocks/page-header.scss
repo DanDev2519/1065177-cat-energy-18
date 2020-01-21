@@ -30,6 +30,10 @@
   height: 39px;
 }
 
+.page-header__content {
+  background-image: linear-gradient($green 305px, $white 305px);
+}
+
 @media #{$tablet} {
   .page-header__wrapper {
     display: block;
@@ -45,6 +49,10 @@
     width: 174px;
     height: 59px;
   }
+
+  .page-header__content {
+    background-image: none;
+  }
 }
 
 @media #{$desktop} {
@@ -58,7 +66,7 @@
     }
     background-size: 720px 696px, 100%;
     background-repeat: no-repeat;
-    background-position: right center, center;
+    background-position: left calc(50% + 720px / 2) center, center;
   }
 
   .page-header__logo {

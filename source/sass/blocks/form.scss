@@ -73,20 +73,17 @@
     fill: $light-black;
   }
 
-  &:hover .form__input,
-  &:focus .form__input {
+  &:hover .form__input {
     border-color: $white-six;
   }
 
-  &:active {
-    & .form__input {
-      border: 2px solid $dark-gray;
-      padding: 12px 14px 11px;
-    }
+  & .form__input:focus {
+    border: 2px solid $dark-gray;
+    padding: 12px 13px 11px;
+  }
 
-    & .form__input + svg {
-      fill: $leaf;
-    }
+  & .form__input:focus + svg {
+    fill: $leaf;
   }
 
   & .form__input--invalid + svg {
@@ -191,6 +188,10 @@
     padding-right: 34px;
   }
 
+  &:focus + .form__label::before {
+    outline: $dark-gray solid 2px;
+  }
+
   &:checked + .form__label--radio::after {
     @include pseudo();
     @include size(12px, 12px);
@@ -222,6 +223,10 @@
   box-sizing: border-box;
 
   resize: vertical;
+
+  &:focus {
+    outline: $dark-gray solid 2px;
+  }
 }
 
 .form__bottom {
@@ -278,12 +283,6 @@
       margin-bottom: 10px;
     }
 
-    &:active {
-      & .form__input {
-        padding: 9px 44px 9px 19px;
-      }
-    }
-
     & .form__label--email ~ svg {
       top: 19px;
       left: 594px;
@@ -292,6 +291,10 @@
     & .form__label--tel ~ svg {
       top: 17px;
       left: 594px;
+    }
+
+    & .form__input:focus {
+      padding: 9px 18px 9px;
     }
   }
 

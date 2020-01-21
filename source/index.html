@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -49,25 +51,27 @@
         </li>
       </ul>
     </nav>
-    <div class="nutrition container">
-      <div class="nutrition__wrapper">
-        <b class="nutrition__title">Функциональное питание для котов</b>
-        <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/content/index-can-desktop@1x.webp 1x, img/content/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/content/index-can-tablet@1x.webp 1x, img/content/index-can-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/content/index-can-mobile@1x.webp 1x, img/content/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)"
-            srcset="img/content/index-can-desktop@1x.png 1x, img/content/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/content/index-can-tablet@1x.jpg 1x, img/content/index-can-tablet@2x.jpg 2x">
-          <img class="nutrition__product-image" src="img/content/index-can-mobile@1x.png"
-            srcset="img/content/index-can-mobile@2x.png 2x" alt="Кэт энерджи с курицей для набора массы">
-        </picture>
-        <a class="nutrition__link-program button" href="form.html">Подобрать программу</a>
+    <div class="page-header__content">
+      <div class="nutrition container">
+        <div class="nutrition__wrapper">
+          <b class="nutrition__title">Функциональное питание для котов</b>
+          <p class="nutrition__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+              srcset="img/content/index-can-desktop@1x.webp 1x, img/content/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/content/index-can-tablet@1x.webp 1x, img/content/index-can-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/content/index-can-mobile@1x.webp 1x, img/content/index-can-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)"
+              srcset="img/content/index-can-desktop@1x.png 1x, img/content/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/content/index-can-tablet@1x.jpg 1x, img/content/index-can-tablet@2x.jpg 2x">
+            <img class="nutrition__product-image" src="img/content/index-can-mobile@1x.png"
+              srcset="img/content/index-can-mobile@2x.png 2x" alt="Кэт энерджи с курицей для набора массы">
+          </picture>
+          <a class="nutrition__link-program button" href="form.html">Подобрать программу</a>
+        </div>
       </div>
     </div>
   </header>
@@ -185,7 +189,7 @@
             </div>
             <div class="example__slider slider">
               <div class="slider__scale">
-                <div class="slider__bar"></div>
+                <button class="slider__bar"></button>
               </div>
               <button class="slider__toggle slider__toggle--was" type="button">Было</button>
               <button class="slider__toggle slider__toggle--become" type="button">Стало</button>
@@ -199,10 +203,12 @@
 
   <footer class="page-footer">
     <div class="page-footer__location">
-      <div class="page-footer__cooperation cooperation cooperation--white-bgc container">
-        <b class="cooperation__text">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span
-            class="cooperation__address-city">Санкт-Петербург</span></p>
+      <div class="page-footer__adress page-footer__adress--white-bgc">
+        <div class="page-footer__cooperation cooperation cooperation--white-bgc container">
+          <b class="cooperation__text">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
+          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span
+              class="cooperation__address-city">Санкт-Петербург</span></p>
+        </div>
       </div>
       <div class="page-footer__map">
         <h2 class="visually-hidden">Карта расположения магазина</h2>

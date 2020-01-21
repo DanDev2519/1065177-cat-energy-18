@@ -26,10 +26,10 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(csso())
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build/css", {sourcemaps: "."}))
     .pipe(server.stream());
 });
 

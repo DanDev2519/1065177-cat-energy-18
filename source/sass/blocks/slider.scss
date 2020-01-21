@@ -5,6 +5,7 @@
 }
 
 .slider__scale {
+  position: relative;
   width: 84px;
   height: 14px;
   margin: 0 5px 0 6px;
@@ -14,14 +15,20 @@
 }
 
 .slider__bar {
-  position: relative;
-  top: 4px;
-  left: 5px;
-  margin: 0;
+  // @include pseudo();
+  padding: 0;
+  // top: 0;
+  // left: 0;
+  border: none;
 
-  @include size(35px, 6px);
-  border-radius: 3px;
-  background-color: $leaf;
+  &::after {
+    @include pseudo();
+    @include size(35px, 6px);
+    top: 4px;
+    left: 5px;
+    border-radius: 3px;
+    background-color: $leaf;
+  }
 }
 
 .slider__toggle {
@@ -46,7 +53,7 @@
   }
 
   .slider__scale {
-    position: relative;
+    // position: relative;
     width: 428px;
     height: 6px;
     margin: 0 10px 0 11px;
@@ -67,12 +74,10 @@
     cursor: pointer;
 
     &::after {
-      @include pseudo();
       @include size(8px, 8px);
       top: 13px;
       left: 13px;
       border-radius: 50%;
-      background-color: $leaf;
     }
 
     &:hover,
@@ -82,7 +87,7 @@
     }
 
     &:active {
-      box-shadow: inset 0 0 0 1px $leaf,
+      box-shadow: inset 0 0 0 2px $leaf,
         0 4px 5px 0 rgba($color: #000000, $alpha: 0.3);
     }
   }
@@ -97,7 +102,7 @@
       @include pseudo();
       bottom: 2px;
       left: 12px;
-      border-bottom: 1px dashed rgba($color: $alm-black, $alpha: 0.23);
+      border-bottom: 1px dotted rgba($color: $alm-black, $alpha: 0.23);
     }
 
     &:hover,

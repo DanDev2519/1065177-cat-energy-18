@@ -1,9 +1,9 @@
 @media #{$desktop} {
-  .inner-page .page-header {
+  .inner-page__header {
     background-image: none;
   }
 
-  .inner-page .site-list__item-link {
+  .inner-page__header-link {
     color: $alm-black;
 
     &--active::before {
