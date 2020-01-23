@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Данил Остряков](https://up.htmlacademy.ru/adaptive/18/user/1065177).
+* Студент: [Данил](https://up.htmlacademy.ru/adaptive/18/user/1065177).
 * Наставник: [Андрей Грачев](https://up.htmlacademy.ru/adaptive/18/user/252055).
 
 ---
